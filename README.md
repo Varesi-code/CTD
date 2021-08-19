@@ -1,19 +1,14 @@
 <img  src='./logo.png'>
 
-## Introducción
 
-# Modulo 0 - Prep
+ Camada1 
+## Modulo 0 - Bimestre 1 
 
-* [00 - Primeros Pasos](./00-PrimerosPasos)
-* [01 - Git](./01-Git)
-* [02 - I - Introducción a Javascript: Variables, tipos de datos y funciones](./02-JS-I)
-* [03 - II- Flujos de control, operadores de comparación, bucles for](./03-JS-II)
-* [04 - III - continuación de bucles for y Arrays](./04-JS-III)
-* [05 - IV - Objetos](./05-JS-IV)
-* [06 - V - Clases y prototype](./06-JS-V)
-* [07 - VI - Callbacks](./07-JS-VI)
-* [08 - HTML](./08-HTML)
-* [09 - CSS](./09-CSS-Positioning)
+* [00 - Base de Datos](./00-PrimerosPasos)
+* [01 - FrontEnd 1](./01-Git)
+* [02 - Introducción a la Informática](./02-JS-I)
+* [03 - Metodologías de trabajo](./03-JS-II)
+* [04 - Programación Imperativa](./04-JS-III)
 
 ## Conceptos:
 
@@ -38,5 +33,7 @@ y así.
 > No todos los homeworks tiene tests, está detallado en la descripción de cada uno.
 
 # La Carrera
+
+
 
 
