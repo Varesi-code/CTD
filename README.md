@@ -1,6 +1,5 @@
 <img  src='./logo.png'>
 
-<img  src='./logo.png'>
 
  Camada1 
 ## Modulo 0 - Bimestre 1 
