@@ -44,6 +44,8 @@ function calcularPorcentaje(numTot, porcentaje) {
 }
 console.log(calcularPorcentaje(100, 15))
 
+//
+
 function generadorDePorcentaje(m, n) {
     return multiplicar(dividir(m, n), 100);
 }
