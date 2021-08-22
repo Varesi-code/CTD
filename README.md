@@ -93,7 +93,7 @@
     <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=engineering&subcat=computerscience">MIT OpenCourseWare</a></li>
     <li><a href="https://www.theodinproject.com/">The Odin Project</a></li>
     <li><a href="https://hackr.io/">hackr.io</a></li>
-    <li><a href="#https://bento.io/">Bento</a></li>
+    <li><a href="https://bento.io/">Bento</a></li>
     <li><a href="https://www.codeavengers.com/">Code Avengers</a></li>
     <li><a href="https://www.sololearn.com/home">Sololearn</a></li>
     <li><a href="https://upskillcourses.com/">Upskill</a></li>
