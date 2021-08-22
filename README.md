@@ -28,7 +28,7 @@
 <!-- PROJECT LOGO -->
 <br/>
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://www.digitalhouse.com/ar/acciones/certified-tech-developer">
     <img src="./logo.png" alt="Logo">
   </a>
 
