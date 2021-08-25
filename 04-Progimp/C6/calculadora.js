@@ -33,7 +33,11 @@ console.log(cuadradoDeUnNumero(3));
 
 
 const promedioDeTresNumeros = function(a, b, c) {
-    return dividir(sumar(a, b) + c, 3)
+    const total1 = sumar(a, b);
+    const total2 = sumar(total1, c);
+    const totalFinal = dividir(total2, 3);
+    return totalFinal;
+
 }
 console.log(promedioDeTresNumeros(2, 4, 6));
 
