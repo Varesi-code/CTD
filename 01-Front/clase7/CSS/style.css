@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap");
+p,
+li {
+    font-family: Montserrat;
+}
+
+section.banner {
+    background-image: url(../imagenes/Collage.png);
+    background-size: contain;
+    background-position: center;
+    height: 256px;
+    background-attachment: fixed;
+}
+
+#navegador ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navegador li {
+    color: #000000;
+    display: inline;
+    text-align: center;
+    margin: 0 20px 0 0;
+}
+
+#navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+#navegador li a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+h1 {
+    color: #fafafa;
+    background-color: #A2A261;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+h2,
+h3 {
+    color: #000000;
+    background-color: #c6c69e79;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.foot {
+    background-color: #DEDEC7;
+    font-family: Caveat;
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+}
