@@ -1,0 +1,151 @@
+/* pasos para usar flexbox
+-----------------------
+1 activar flex en el contenedor padre de los contenidos
+en css display: flex;
+2 -definir la direccion 
+flex direction: row  (por defecto)
+3 -alineacion del eje principal
+justify content: space-between /around 
+4-align-items: center 
+5-gap:20px
+
+6-si tengo muchos items los puedo organizar con wrap
+flex-wrap:wrap en el que quiero que se acomode
+flex direction wrap
+flex-flow: row wrap
+
+7- */
+
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.descuento {
+    background-color: rgba(0, 255, 255, 0.713);
+    height: 30px;
+}
+
+p.descuento {
+    position: relative;
+    top: 20%;
+}
+
+header.encabezado {
+    background-color: #00669F;
+    box-shadow: 0 4px 2px -2px gray;
+    height: 10%;
+    position: sticky;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    text-align: justify;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+main section article.profile {
+    border: 1px;
+    box-shadow: 4px 2px -2px gray;
+    display: inline-block;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    width: 193px;
+    background-color: #F3F3F3;
+}
+
+div {
+    display: block;
+    /* position: relative; */
+    width: inherit;
+    height: 336px;
+    padding: 15px;
+    box-shadow: 0px 5px 3px rgb(0 0 0 / 25%);
+    top: 20px;
+}
+
+div h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main section article .batman {
+    background-image: url("../imagenes/fondobatman.png");
+}
+
+main section article .harley {
+    background-image: url("../imagenes/fondoharley.png");
+}
+
+.batman,
+.harley {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    border-radius: 15%;
+    position: relative;
+}
+
+.foto {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+main section #like {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+
+h2 {
+    margin-block-end: 10px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.button {
+    background-color: #00669F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70%;
+    border-radius: 10px;
+    left: 30px;
+    position: relative;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer p {
+    background-color: #00669F;
+    color: white;
+    font-size: 80%;
+}
+
+footer {
+    display: block;
+    position: relative;
+}
