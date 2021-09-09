@@ -45,7 +45,8 @@ header h1 {
 }
 
 main {
-    height: 100% position: relative;
+    height: 100% ;
+    position: relative;
     text-align: center;
     bottom: 85px;
     display: flex;
