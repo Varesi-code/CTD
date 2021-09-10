@@ -244,5 +244,7 @@ console.log(incrementarHonor);
 
 console.log(v, oo + " F. corregirEmails");
 // Ejecución aquí
-const corregirMail = appProfesionales.corregirEmails();
+ const corregirMail = appProfesionales.corregirEmails();
 console.log(corregirMail);
+
+
