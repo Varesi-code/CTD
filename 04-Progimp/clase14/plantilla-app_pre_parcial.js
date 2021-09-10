@@ -180,7 +180,7 @@ const inmobiliaria = {
       console.log(`id: ${depto.id}, precio ${depto.precioAlquiler}, 
       está ${depto.disponible ? " disponible ": " alquilado "}, 
       ${depto.cantidadHabitacion} ambientes, 
-      máximo ${depto.cantidadPersonas} personas, ${depto.aceptaMascotas? " acepta ":" no acepta "} mascotas, 
+      máximo ${depto.cantidadPersonas} personas, ${depto.aceptaMascotas ? " acepta ":" no acepta "} mascotas, 
       propietarios: ${depto.propietarios} `)
     };
   },
@@ -286,9 +286,11 @@ alquilarDepto: function(departamento){
   //A2
   alquilarDepartamento: function(id){
     const depto = this.buscarPorId(id)
-    depto.disponible = false;
-    return `El departamento con id: ${depto.id} está alquilado`;
+    if(depto.disponible === true){
+      depto.disponible = false;
+      return `El departamento con id: ${depto.id} está alquilado`;
     //return depto;
+    }
     
   },
   

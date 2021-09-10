@@ -75,18 +75,17 @@ let arrayCuentas = [
 // 2. ANCHOR Nos solicitan también crear un objeto literal llamado “banco”, el cual tendrá una
 // propiedad llamada “clientes”, que estará compuesta de la lista de objetos
 // obtenidos en el punto anterior.
-banco = {
+const banco = {
   clientes: arrayCuentas,
 
 
-
-  // 3. ANCHOR Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá
+ // 3. ANCHOR Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá
   // un nombre (titular) por parámetro, deberá buscarlo en la lista de cuentas y
   // retornar el objeto cliente que corresponda con ese nombre ingresado.
   // ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
   consultarCliente: function(titular) {
     for (let i = 0; i < this.clientes.length; i++) {
-      if(titular[i] === this.clientes[i].titularCuenta) {
+      if(titular === this.clientes[i].titularCuenta) {
         return this.clientes[i];
       }
     }
@@ -99,18 +98,9 @@ banco = {
   // realizado, su nuevo saldo es: xxx”.
   deposito: function(dueno, cantidad){
     const cuentaADepositar = this.consultarCliente(dueno);
-    for (let i = 0; i < this.cuentaADepositar.length; i++) {
-        const cuenta = cuentaADepositar [i];
-        return `Extraccion realizada correctamente. su nuevo saldo es : ${cuenta.saldoEnPesos += cantidad}`;
-          
-          };
-      
-    
+    return `Deposito realizado correctamente. su nuevo saldo es : ${cuentaADepositar.saldoEnPesos += cantidad}`;
   },
   
-  
-
-
   // 5. ANCHOR Crear un último método llamado extracción, que recibirá también dos
   // parámetros: el titular de cuenta y el monto a extraer. El método debe obtener
   // la cuenta correspondiente y restar el monto al saldo actual. En caso de que el
@@ -119,14 +109,10 @@ banco = {
   // correctamente, su nuevo saldo es: xxx”.
   extraccion: function (nombre, monto) {
     const cuentaAExtraer = this.consultarCliente(nombre);
-    for (let i = 0; i < this.cuentaAExtraer.length; i++) {
-        const cuenta = cuentaAExtraer [i];
-        if (cuenta.saldoEnPesos - monto < 0) {
-          return `Fondos Insuficientes.`;
-        } else {
-          return `Extraccion realizada correctamente. su nuevo saldo es : ${cuenta.saldoEnPesos -= monto}`;
-          
-          };
+    if (cuentaAExtraer.saldoEnPesos - monto < 0) {
+      return `Fondos Insuficientes.`;
+      } else {
+      return `Extraccion realizada correctamente. su nuevo saldo es : ${cuentaAExtraer.saldoEnPesos -= monto}`;
       };
     }
   
