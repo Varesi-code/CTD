@@ -1,40 +1,40 @@
 
-  //     3) y 4)
-  const banco = {
-    clientes: arrayCuentas,
-    consultarCliente: function (nombre) {
-      for (let i = 0; i < this.clientes.length; i++) {
-        if (nombre === this.clientes[i].titularCuenta) {
-          return this.clientes[i];
-        }
-      }
-    },
-    deposito: function (titularCuenta, CantDinADepositar) {
-      for (let i = 0; i < this.clientes.length; i++) {
-        if (titularCuenta === this.clientes[i].titularCuenta) {
-          let saldoFinal = (this.clientes[i].saldoEnPesos += CantDinADepositar);
-          return "DepÃ³sito realizado, su nuevo saldo es: " + saldoFinal;
-        }
-      }
-    },
-    extraccion: function (titularCuenta, CantDinAExtraer) {
-      for (let i = 0; i < this.clientes.length; i++) {
-        if (titularCuenta === this.clientes[i].titularCuenta) {
-          let saldoFinal = (this.clientes[i].saldoEnPesos -= CantDinAExtraer);
-          if (saldoFinal < 0) {
-              return 'Fondos insuficientes'
-          } else {
-          return "Extraccion realizada, su nuevo saldo es: " + saldoFinal;
+  // //     3) y 4)
+  // const banco = {
+  //   clientes: arrayCuentas,
+  //   consultarCliente: function (nombre) {
+  //     for (let i = 0; i < this.clientes.length; i++) {
+  //       if (nombre === this.clientes[i].titularCuenta) {
+  //         return this.clientes[i];
+  //       }
+  //     }
+  //   },
+  //   deposito: function (titularCuenta, CantDinADepositar) {
+  //     for (let i = 0; i < this.clientes.length; i++) {
+  //       if (titularCuenta === this.clientes[i].titularCuenta) {
+  //         let saldoFinal = (this.clientes[i].saldoEnPesos += CantDinADepositar);
+  //         return "DepÃ³sito realizado, su nuevo saldo es: " + saldoFinal;
+  //       }
+  //     }
+  //   },
+  //   extraccion: function (titularCuenta, CantDinAExtraer) {
+  //     for (let i = 0; i < this.clientes.length; i++) {
+  //       if (titularCuenta === this.clientes[i].titularCuenta) {
+  //         let saldoFinal = (this.clientes[i].saldoEnPesos -= CantDinAExtraer);
+  //         if (saldoFinal < 0) {
+  //             return 'Fondos insuficientes'
+  //         } else {
+  //         return "Extraccion realizada, su nuevo saldo es: " + saldoFinal;
               
-          }
-        }
-      }
-    },
-  };
+  //         }
+  //       }
+  //     }
+  //   },
+  // };
   
-  console.log(banco.consultarCliente("Jacki Shurmer"));
-  console.log(banco.deposito("Jacki Shurmer", 10000));
-  console.log(banco.extraccion("Jacki Shurmer", 1000));
+  // console.log(banco.consultarCliente("Jacki Shurmer"));
+  // console.log(banco.deposito("Jacki Shurmer", 10000));
+  // console.log(banco.extraccion("Jacki Shurmer", 1000));
 
 
 
@@ -72,27 +72,70 @@ let arrayCuentas = [
   },
 ];
 
-// 2. Nos solicitan también crear un objeto literal llamado “banco”, el cual tendrá una
+// 2. ANCHOR Nos solicitan también crear un objeto literal llamado “banco”, el cual tendrá una
 // propiedad llamada “clientes”, que estará compuesta de la lista de objetos
 // obtenidos en el punto anterior.
+banco = {
+  clientes: arrayCuentas,
 
-// 3. Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá
-// un nombre (titular) por parámetro, deberá buscarlo en la lista de cuentas y
-// retornar el objeto cliente que corresponda con ese nombre ingresado.
-// ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
 
-// 4. Crear otro método llamado depósito, que recibirá dos parámetros, el titular de
-// cuenta y una cantidad de dinero a depositar. El método debe obtener a la
-// cuenta correspondiente y luego sumar la cantidad de dinero a depositar a saldo
-// en pesos. Luego, deberá dar un aviso por la consola con el mensaje “Depósito
-// realizado, su nuevo saldo es: xxx”.
 
-// 5. Crear un último método llamado extracción, que recibirá también dos
-// parámetros: el titular de cuenta y el monto a extraer. El método debe obtener
-// la cuenta correspondiente y restar el monto al saldo actual. En caso de que el
-// resultado sea menor a 0, deberá imprimir un mensaje por la consola de
-// “Fondos insuficientes”, de lo contrario deberá imprimir “Extracción realizada
-// correctamente, su nuevo saldo es: xxx”.
+  // 3. ANCHOR Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá
+  // un nombre (titular) por parámetro, deberá buscarlo en la lista de cuentas y
+  // retornar el objeto cliente que corresponda con ese nombre ingresado.
+  // ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
+  consultarCliente: function(titular) {
+    for (let i = 0; i < this.clientes.length; i++) {
+      if(titular[i] === this.clientes[i].titularCuenta) {
+        return this.clientes[i];
+      }
+    }
+    
+  },
+  // ANCHOR 4, Crear otro método llamado depósito, que recibirá dos parámetros, el titular de
+  // cuenta y una cantidad de dinero a depositar. El método debe obtener a la
+  // cuenta correspondiente y luego sumar la cantidad de dinero a depositar a saldo
+  // en pesos. Luego, deberá dar un aviso por la consola con el mensaje “Depósito
+  // realizado, su nuevo saldo es: xxx”.
+  deposito: function(dueno, cantidad){
+    const cuentaADepositar = this.consultarCliente(dueno);
+    for (let i = 0; i < this.cuentaADepositar.length; i++) {
+        const cuenta = cuentaADepositar [i];
+        return `Extraccion realizada correctamente. su nuevo saldo es : ${cuenta.saldoEnPesos += cantidad}`;
+          
+          };
+      
+    
+  },
+  
+  
+
+
+  // 5. ANCHOR Crear un último método llamado extracción, que recibirá también dos
+  // parámetros: el titular de cuenta y el monto a extraer. El método debe obtener
+  // la cuenta correspondiente y restar el monto al saldo actual. En caso de que el
+  // resultado sea menor a 0, deberá imprimir un mensaje por la consola de
+  // “Fondos insuficientes”, de lo contrario deberá imprimir “Extracción realizada
+  // correctamente, su nuevo saldo es: xxx”.
+  extraccion: function (nombre, monto) {
+    const cuentaAExtraer = this.consultarCliente(nombre);
+    for (let i = 0; i < this.cuentaAExtraer.length; i++) {
+        const cuenta = cuentaAExtraer [i];
+        if (cuenta.saldoEnPesos - monto < 0) {
+          return `Fondos Insuficientes.`;
+        } else {
+          return `Extraccion realizada correctamente. su nuevo saldo es : ${cuenta.saldoEnPesos -= monto}`;
+          
+          };
+      };
+    }
+  
+  
+}
+console.log(banco);
+console.log(banco.consultarCliente("Jacki Shurmer"));
+console.log(banco.deposito("Jacki Shurmer", 15000));
+console.log(banco.extraccion("Jacki Shurmer", 15000));
 // Si llegaste hasta acá, felicidades, el equipo de desarrollo y el tech leader están
 // impresionados con tu trabajo.
 
@@ -111,7 +154,7 @@ let arrayCuentas = [
 // Ejemplo:
 // let array = [ { nombre: “Lean”, edad: 27 }, { nombre: “Eze”, edad: 49} ]
 // propiedadUnica(array, “edad”) debe retornar [ { edad: 27 }, { edad: 49 } ]
-// propiedadUnica(array, “nombre”) debe retornar [ { nombre: “Lean”}, { nombre: “Eze” } ]
+// propiedadUnica(array, “nombre”) debe retornar [ { nombre: “Lean”}, { nombre: “Eze” }]
 
 // Calculador de notas
 // Crear el objeto “alumno”, el cual va a consistir en las siguientes propiedades básicas:
