@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos datalst</title>
+</head>
+
+<body>
+    <h1>Ejemplos de DataList</h1>
+
+    <article>
+        <h2>input[type=text]</h2>
+        <label for="mascota">Seleccione una mascota</label>
+        <input id="mascota" type="text" name="mascotita" value="" list="mascotas" />
+        <datalist id="mascotas">
+            <option value="Ave">
+            <option value="Gato">
+            <option value="Hámster">
+            <option value="Perro">
+        </datalist>
+    </article>
+
+    <article>
+        <h2>input[type=range]</h2>
+        <label for="satisf">Seleccione su nivel de satisfacción</label>
+        <input id="satisf" type="range" name="satisf" value="0" min="0" max="100" list="nivel" />
+        <output for="satisf">0</output>
+        <datalist id="nivel">
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+            <option>75</option>
+            <option>90</option>
+        </datalist>
+        <script>
+            document.querySelector('#satisf').onchange = function (e) {
+                e.target.nextElementSibling.innerText = e.target.value;
+            }
+        </script>
+    </article>
+
+    <article>
+        <h2>input[type=color]</h2>
+        <label for="colores">Seleccione su nivel de satisfacción</label>
+        <input id="colores" type="color" name="color" value="#000000" list="color" />
+        <datalist id="color">
+            <option>#ff0000</option>
+            <option>#0000ff</option>
+            <option>#00ff00</option>
+            <option>#ffff00</option>
+            <option>#00ffff</option>
+        </datalist>
+    </article>
+
+    <article>
+        <h2>input[type=date]</h2>
+        <label for="date">Seleccione su nivel de satisfacción</label>
+        <input type="date" id="date" list="days" />
+        <datalist id="days">
+            <option label="Año Nuevo">2021-01-01</option>
+            <option label="Día del trabajador">2021-05-01</option>
+            <option label="Mi cumple">2021-05-01</option>
+        </datalist>
+    </article>
+   
+
+
+</body>
+
+</html>

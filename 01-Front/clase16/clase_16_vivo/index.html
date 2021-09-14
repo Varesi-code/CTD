@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="login">
+        <h3>Login</h3>
+        <form action="contacto.html" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!-- 2- Input radio -->
+                <p>Tipo de Documento
+                    <input type="radio" id="documento1" name="documento" value="1">
+                    <label for="documento1"> DNI </label>
+                    <input type="radio" id="documento2" name="documento" value="2">
+                    <label for="documento2"> CUIL </label>
+                    <input type="radio" id="documento3" name="documento" value="3">
+                    <label for="documento3"> CUIT </label>
+                </p>
+
+                <!-- 1- Input -->
+                <label for="num-doc2">Nro. Documento</label>
+                <input type="number" id="num-doc2" name="num-doc">
+
+                <label for="foto">Ingrese foto</label>
+                <input type="file" id="foto" name="foto" accept="image/png, image/jpeg">
+
+                <label for="f_nac">Fecha de nacimiento:</label>
+                <input type="date" id="f_nac" name="f_nac">
+
+                <label for="nombre">Nombre y apellido (Obligatorio)</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" minlength="5"
+                    oninvalid="setCustomValidity('Por favor, completar correctamente')">
+
+                <label for="tel">Tel</label>
+                <input type="tel" id="tel" name="tel" placeholder="123-901" pattern="[0-9]{3}-[0-9]{3}">
+
+                <!-- 3.1- Checkbox -->
+                <p>Establecimiento Educativo<br>
+                    <input type="checkbox" id="educativo1" name="educativo">
+                    <label for="educativo1"> Público</label>
+                    <input type="checkbox" id="educativo2" name="educativo" value="2">
+                    <label for="educativo2"> Privado</label>
+                    <input type="checkbox" id="educativo3" name="educativo" value="3">
+                    <label for="educativo3"> Mixto</label>
+                </p>
+
+                <!-- 4 - Select -->
+                <label for="pais">Seleccione su nacionalidad:</label>
+                <select name="pais" id="pais">
+                    <option value="" selected disabled >...</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+                <br><br>
+                <!-- 5 -  Select con optgroup-->
+                <label for="vehiculo">Seleccione un vehículo:</label>
+                <select name="vehiculo" id="vehiculo">
+                    <optgroup label="Dos ruedas">
+                        <option value="bici">Bicicleta</option>
+                        <option value="moto">Moto</option>
+                    </optgroup>
+                    <optgroup label="Cuatro ruedas">
+                        <option value="auto">Auto</option>
+                        <option value="cuatri">Cuatriciclo</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <!-- 6 - Datalist -->
+                <label for="mascota">Seleccione una mascota</label>
+                <input type="text" id="mascota" name="masc" value="" list="mascotas" />
+                <datalist id="mascotas">
+                    <option value="Ave">
+                    <option value="Gato">
+                    <option value="Hámster">
+                    <option value="Perro">
+                </datalist>
+            </fieldset>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="alguien@mail.com" required
+                oninvalid="setCustomValidity('Por favor, completar correctamente el mail')">
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+
+            <!-- 3.2 - Checkbox -->
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos.</label>
+            <br>
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </div>
+</body>
+
+</html>

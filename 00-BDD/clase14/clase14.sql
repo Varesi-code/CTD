@@ -1,9 +1,11 @@
+-- Consultando la BD e-Market
+
 -- Clientes
 -- 1) ¿Cuántos clientes existen?
 
 -- 2) ¿Cuántos clientes hay por ciudad?
 
- 
+ -- Facturas
 -- 1) ¿Cuál es el total de transporte?
 
 -- 2) ¿Cuál es el total de transporte por EnvioVia (empresa de envío)?
@@ -34,7 +36,6 @@
 
 --  Consultas queries XL parte II - JOIN
 -- En esta segunda parte vamos a intensificar la práctica de consultas con JOIN.
-
 -- 1) Generar un listado de todas las facturas del empleado 'Buchanan'.
 
 -- 2) Generar un listado con todos los campos de las facturas del correo 'Speedy

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo form</title>
+</head>
+
+<body>
+    <form action="contacto.html" method="GET" enctype="multipart/form-data">
+        <label for="nom">Nombre</label>
+        <input type="text" id="nom" name="nombre" placeholder="Ej: Juan" required>
+
+        <label for="ape">Apellido:</label>
+        <input type="text" id="ape" name="apellido" placeholder="Ej: Perez" required>
+
+        <label for="arch">Archivo:</label>
+        <input type="file" name="archivo" id="arch">
+
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
