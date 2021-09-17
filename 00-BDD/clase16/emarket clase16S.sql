@@ -24,3 +24,20 @@ where isnull(facturas.facturaId);
 -- 6. Todas las facturas tienen una empresa de correo asociada (enviovia). Generar un
 -- listado con todas las empresas de correo, y la cantidad de facturas
 -- correspondientes. Realizar la consulta utilizando RIGHT JOIN.
+
+
+
+-----------------
+select facturas.facturaid, correos.compania, contacto, productos.CategoriaID, categorianombre, productonombre, 
+productos.PrecioUnitario, facturadetalle.PrecioUnitario, Cantidad
+from correos
+join facturas
+on correos.CorreoID = facturas.EnvioVia
+join clientes
+on facturas.ClienteID = clientes.ClienteID
+join facturadetalle
+on facturas.FacturaID = facturadetalle.FacturaID
+join productos
+on facturadetalle.ProductoID = productos.ProductoID
+join categorias
+on productos.CategoriaID = categorias.CategoriaID;

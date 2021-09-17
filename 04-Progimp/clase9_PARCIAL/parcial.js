@@ -34,7 +34,6 @@ console.log(resultado)
 // "No se puede dividir por 0", 
 // caso contrario, deberá retornar el resultado de la división.
 
-//PENALIZACION 0.8 de 1 la concha de su pelada madre
 //LINEA 41. NO DECLARAR ANTES DE COMPROBAR SI EL NUMERO ES CERO
 function dividir(a, b) {
     let resultado = "";

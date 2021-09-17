@@ -1,0 +1,247 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+	 font-family: sans-serif;
+	 background: #fff;
+	 font-size: 1.2em;
+	 color: #333;
+}
+h1{
+    text-align: center;
+	font-weight: bold;
+	color: #04857e
+}
+main{
+	padding: 80px 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main > div{
+	min-width: 280px;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #04857e
+}
+
+
+/* Clases para los contenedores de Radio y Checkbox*/
+.content-input{
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.content-input{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 60px;
+	display: block;
+}
+
+/* 
+La propiedadd appearance da un aspecto standard a un elemento.
+Por ejemplo: appearance: button
+Como vamos a personalizar nuestros elemento añadimos el valor none
+ */
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+.content-input i,
+.content-input i:before{
+	transition: all 0.25s ease;
+}
+
+/* 
+Ocultamos nuestros inputs. Con opacity 0. 
+Si utilizamos visibility:hidden o display:none;
+no funcionarán
+*/
+.content-input input{
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+
+/*
+Propiedades para cualquier el elmento i despuÃ©s de un input
+dentro de la capa .content-input
+*/
+.content-input input + i{
+	background: #f0f0f0;
+	border:2px solid rgba(0,0,0,0.2);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*
+Propiedades para el checkbox
+*/
+.content-input input[type=checkbox ] + i{
+	width: 52px;
+	height: 30px;
+	border-radius: 15px;
+}
+
+/*
+Propiedades para radio
+*/
+.content-input input[type=radio] + i{
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	left: 15px;
+}
+
+
+/*
+Creamos el cálculo que aparece encima de los checkbox
+con la etqieta before. Importante aunque no haya contenido
+debemos poner definir este valor.
+*/
+.content-input input[type=checkbox] + i:before{
+	content: ''; /* No hay contenido */
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
+
+
+.content-input input[type=checkbox] + i:after{
+	content: 'ON';
+	position: absolute;
+	font-size: 10px;
+	color: rgba(255,255,255,0.6);
+	top: 8px;
+	left: 4px;
+	opacity: 0;
+	transition: all 0.25s ease 0.25s;
+}
+
+/*
+Creamos el ca­culo que se mostrará cuando hagamos click 
+en cualquier radio y lo ocultamos con opacity 0
+*/
+.content-input input[type=radio] + i:before{
+	content: '';
+	display: block;
+	height: 18px;
+	width: 18px;
+	background: red;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 4px;
+	left: 4px;
+	background:#2ac1a0;
+	transition: all 0.25s ease;
+	transform: scale(0);
+	opacity: 0; /* Lo ocultamos*/
+}
+
+
+
+.content-input:hover input[type=radio]:not(:checked) + i,
+.content-input:hover input[type=checkbox]:not(:checked) + i{
+	background: #b1e8d8;
+}
+
+
+
+/*
+Con :checked definimos los valores css cuando un input
+como radio o checkbox está checkeado
+*/
+.content-input input[type=checkbox]:checked + i{
+	background: #2ac1a0;
+}
+
+.content-input input[type=checkbox]:checked + i:before{
+	left: 22px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+
+.content-input input[type=checkbox]:checked + i:after{
+	opacity: 1;
+}
+
+.content-input input[type=radio]:checked + i:before{
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Select */
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.content-select select:hover{
+	background: #b1e8d8;
+}
+
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2ac1a0;
+	border-bottom:4px solid #2ac1a0;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+
+.content-select:hover i{
+	margin-top: 3px;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}

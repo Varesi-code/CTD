@@ -35,11 +35,13 @@
 -- 4. Generar un reporte que indique: ID de cliente, cantidad de alquileres y monto
 -- total para todos los clientes que hayan gastado más de 150 dólares en
 -- alquileres.
+
 SELECT customer.customer_id as idCliente, COUNT(rental.customer_id) as CantAlq, SUM(amount)
 FROM customer
 INNER JOIN payment ON customer.customer_id = payment.customer_id
 INNER JOIN rental ON payment.rental_id = rental.rental_id
-WHERE SUM(amount) > 150;
+GROUP BY idcliente
+having SUM(amount) > 150;
 
 
 -- 5. Generar un reporte que muestre por mes de alquiler (rental_date de tabla

@@ -16,9 +16,7 @@
 // votos etapa 1
 // ganador v1
 // vot etapa 2
-// G v2
 // v etapa 3
-// G v3
 // Resultado
 
 

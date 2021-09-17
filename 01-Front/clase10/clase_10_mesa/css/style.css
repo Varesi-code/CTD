@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    --color-blue:  #00669F;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+/* ===== ASIDE ===== */
+aside{
+    background-color: #D1891C;
+    font-size: 1.2em;
+    padding: 0 2%;
+}
+/* ===== HEADER ===== */
+header{
+    background-color: var(--color-blue);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);  
+    height: auto;
+    padding-left: 2%;
+    position: sticky;
+    top: 0px;
+    z-index: 15;
+}
+h1{
+    font-size: 2em;
+    line-height: 3em;
+    margin: 0;
+}
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* ===== SECTION CARD ===== */
+section.cards-super{ 
+    text-align: center;
+    margin: 30px auto;
+}
+article.card{
+    background-color: #F3F3F3;
+    border-radius: 15px 15px 0 0;
+    /* filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.16)); */
+    margin: 0 20px;
+    width: 300px;   
+    display: inline-block;  
+}
+.card-header{
+    margin-bottom: 50px;
+    position: relative;  
+}
+.fa-heart{
+    color: #CC2424;
+    font-size: 2em;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    z-index: 10;
+}
+.super{ /* La foto del superheroe */
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 30%;
+}
+.back-card{ /* La imagen de fondo */
+    border-radius: 15px 15px 0 0;
+    height: 200px;
+}
+.back{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img-super-1{
+    background-image: url(../img/batman.jpg);
+}
+.img-back-card-1{
+    background-image: url(../img/bg-batman.jpg);
+}
+.img-super-2{ 
+    background-image: url(../img/wonderw.jpg);
+}
+.img-back-card-2{
+    background-image: url(../img/bg-wonderw.jpg);
+}
+.img-super-3{
+    background-image: url(../img/superman.jpg);
+}
+.img-back-card-3{
+    background-image: url(../img/bg-superman.jpg);
+}
+.card-body{
+    padding: 5%;
+}
+.p-btn{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+a.btn-ver{
+    background-color: var(--color-blue);
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+/* ===== SECTION ADD ===== */
+.add{
+    position: fixed;
+    z-index: 16;
+    right: 25px;
+    bottom: 100px;
+}
+.add a{
+    font-size: 3em;
+    color: var(--color-blue);
+}
+/* ===== FOOTER ===== */
+footer{
+    background-color: var(--color-blue);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+}
+.logo-git{
+    width: 100px;
+    height: 30px;
+    margin-left: 15%;
+}

@@ -1,10 +1,3 @@
-const v = "\x1b[32m%s\x1b[0m";
-const o = "*".repeat(80) + "\n";
-const oo = "*".repeat(25);
-// Te proveemos la siguiente plantilla que tiene tres partes:
-// - Array de objetos que está colapsado aquí debajo.
-// - Desarrollo de las consignas, donde escribirás el código que responda a los enunciados
-// - Ejecución de las consignas, donde ejecutarás los métodos correspondientes mostrando por consola sus resultados
 const nombre = "Natalia Varesi";
 const tema = "TEMA 3";
 
@@ -179,42 +172,28 @@ const appProfesionales = {
 
         };
     },
-    // C
-    filtrarHabilitados: function() {
-        const habilitados = [];
-        for (let i = 0; i < this.profesionales.length; i++) {
-            const prof = this.profesionales[i];
-            if (prof.estaHabilitado) {
-                habilitados.push(prof);
-            }
-        };
-        return habilitados;
-    },
+
     // D
     buscarPorID: function(id) {
         for (let i = 0; i < this.profesionales.length; i++) {
             const prof = this.profesionales[i];
             if (prof.id === id) {
                 return prof;
+
             }
         }
     },
-    // E
-    incrementarHonorarios: function(id, porcentaje) {
-        const prof = this.buscarPorID(id);
-        prof.honorarioConsulta += prof.honorarioConsulta * porcentaje / 100;
-        return prof;
-    },
 
-    // F
-    corregirEmails: function() {
-        for (let i = 0; i < this.profesionales.length; i++) {
-            const prof = this.profesionales[i];
-            prof.email = prof.email.replace("#", "@");
-        }
-        return this.profesionales;
-    },
+    // //el tuyo
+    // habilitarProfesional: function(iden) { // E
+    //     this.profesionales[iden].estaHabilitado = true;
+    //     return console.log(this.profesionales[iden]);
 
+    //     this.profesionales[iden].estaHabilitado = true;
+    // },
+
+
+    // opcion
     habilitarProf: function(iden) {
         //declaro una constante para el profesional que ya busca mi funcion anterior
         // es igual a this.profesionales[iden] de tu ejemplo
@@ -227,46 +206,11 @@ const appProfesionales = {
         }
 
     }
-};
-/******************************/
-/* Ejecución de las consignas */
-/******************************/
-console.table([{ alumno: nombre, tema: tema }]);
-
-console.log(v, "\n" + oo + "   B. listarProfesional");
-// Ejecución aquí
-appProfesionales.listarProfesionales(profesionales);
-
-console.log(v, oo + "   C. filtrarHabilitados");
-// Ejecución aquí
-const filtrarHab = appProfesionales.filtrarHabilitados();
-appProfesionales.listarProfesionales(filtrarHab);
-
-console.log(v, oo + " D. buscarPorId(1)");
-// Ejecución aquí
-const filtrarID = appProfesionales.buscarPorID(1);;
-appProfesionales.listarProfesionales([filtrarID]);
-
-//console.log(v, oo + "  E. incrementarHonorarios");
-// Ejecución aquí
-//const incrementarHonor = appProfesionales.incrementarHonorarios(1, 10);
-//console.log(incrementarHonor);
-
-console.log(v, oo + "  E. incrementarHonorarios");
-// Ejecución aquí
-const incrementarHonor = appProfesionales.incrementarHonorarios(1, 10);
-appProfesionales.listarProfesionales([incrementarHonor]);
+}
 
 
-//console.log(v, oo + " F. corregirEmails");
-// Ejecución aquí
-//const corregirMail = appProfesionales.corregirEmails();
-//console.log(corregirMail);
+// declaro una variable que guarda el metodo que cree recien
+const habilitar = appProfesionales.habilitarProf(1)
 
-console.log(v, oo + " F. corregirEmails");
-// Ejecución aquí
-const corregirMails = appProfesionales.corregirEmails();
-appProfesionales.listarProfesionales(corregirMails);
-
-console.log(v, oo + " g. habilitarProf")
-console.log(appProfesionales.habilitarProf(2));
+//uso listarprofesionales para hacer el console log de mi prof con nuevo valor
+appProfesionales.listarProfesionales([habilitar])
