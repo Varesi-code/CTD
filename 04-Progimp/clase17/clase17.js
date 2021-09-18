@@ -37,11 +37,13 @@ const conversor6 = (alturaM, pesoK) => pesoK / (alturaM * alturaM);
 //SIETE Crear una función que recibe un string en minúscula, lo convierta a mayúsculas y lo retorne. 
 // Investiga que hace el método de strings .toUpperCase()
 const conversor7 = stringMin => {
-    const stringMay = stringMin.toUpper()
+    const stringMay = stringMin.toUpperCase()
+    return stringMay;
 }
 
 //OCHO Crear una función que recibe un parámetro y devuelve qué tipo de dato es ese parámetro. 
 // pista: te servirá revisar que hace la palabra reservada typeof.
+const conversor8 = tipeof
 
 //NUEVE Crear una función que le pasamos el radio de un círculo y nos devuelve la circunferencia
 // Pista: Investiga si el objeto Math tiene entre sus propiedades el número Pi
