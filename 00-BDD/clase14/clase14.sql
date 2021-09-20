@@ -86,11 +86,29 @@ where empleados.Apellido = "Leverling" or facturadetalle.ProductoID = 42;
 
 -- 6) Mostrar todos los campos de las facturas del empleado cuyo apellido sea
 -- “Leverling” y que incluya los producto id = “80” o ”42”.
-
+select * from facturas
+join empleados on facturas.empleadoId = empleados.empleadoId
+join facturadetalle on facturadetalle.FacturaID = facturas.FacturaID
+where empleados.Apellido = "Leverling" and facturadetalle.ProductoID in (80, 42);
 
 -- 7) Generar un listado con los cinco mejores clientes, según sus importes de
 -- compras total (PrecioUnitario * Cantidad).
+select * from clientes;
+select * from facturas;
+
+select clientes.ClienteID as "Mejores Clientes", sum(PrecioUnitario * Cantidad) as total from clientes 
+join facturas on clientes.ClienteID = facturas.ClienteID
+join facturadetalle on facturadetalle.FacturaID = facturas.FacturaID
+group by clientes.ClienteID
+order by total desc limit 5;
 
 -- 8) Generar un listado de facturas, con los campos id, nombre y apellido del cliente,
 -- fecha de factura, país de envío, Total, ordenado de manera descendente por
 -- fecha de factura y limitado a 10 filas. 
+select facturas.FacturaID as ID, clientes.ClienteID as "Nombre y Apellido", FechaFactura, PaisEnvio,
+sum(PrecioUnitario*Cantidad) as Total from facturas
+join clientes on clientes.ClienteID = facturas.ClienteID
+join facturadetalle on facturas.FacturaID = facturadetalle.FacturaID
+group by clientes.ClienteID
+order by facturas.FechaFactura desc 
+limit 10;

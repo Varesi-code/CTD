@@ -38,6 +38,8 @@ select * from clientes;
 -- de dos formas distintas:
 -- a. Consultando la tabla de proveedores.
 -- b. Consultando la vista de proveedores.
+
+
 -- Vistas - Parte II
 
 -- 1. Crear una vista de productos que se usará para control de stock. Incluir el ID
