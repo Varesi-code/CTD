@@ -1,57 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200;600&display=swap');
-
-:root{
-    --bg-page: white;
-    --text-page: black;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --main-color: #F0A83E;
+    ;
+    --sec-color: #3C2313;
+    --bodybg-color: #E5E5E5;
 }
 
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
 }
+
 body {
-    color:var(--text-page);
-    background-color:var(--bg-page);
-    max-width:90%;
-    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    color: var(--sec-color);
+    background-color: var(--bbodybg-color);
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
 }
 
-hr{
-margin:20px ;
-background-color: var(--text-page);
+a {
+    color: white;
+    text-decoration: none;
 }
 
-picture{
-align-self: center;
+section h2 {
+    color: var(--sec-color);
+    font-size: 30px;
 }
 
-picture img{
-    border:1px solid var(--text-page);
+
+/* header ----------------------------------------------*/
+
+header section {
+    display: block;
 }
 
-@media (prefers-color-scheme : dark){
-   body{  
-       --bg-page: white;
-       --text-page: black;
-   }
+header section.header-first {
+    background-color: black;
+    color: white;
 }
-@media screen and (min-width: 950px){
-    /*mobile first. cuando la pantalla sea mas grande */
-    body{ 
-        color:var(--text-page);
-    background-color:var(--bg-page);
-    max-width:60%;
-    margin: 10vh auto;
+
+header section.header-second {
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem;
+    ;
+}
+
+header img {
+    height: 2rem;
+    align-self: center;
+    /* padding: 10vh */
+}
+
+ul {
+    list-style: none;
+}
+
+header section nav ul {
+    display: flex;
     flex-direction: row;
-    gap: 10vh;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
 
+header section nav ul li a {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+nav ul li::before {
+    content: url(../Imagenes/pawprint4.png);
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px;
+    visibility: hidden;
+}
+
+nav ul li:hover::before {
+    visibility: visible;
+}
+
+header a:hover {
+    color: var(--sec-color);
+    visibility: visible;
+}
+
+
+/* main ------------------------------------------------*/
+
+main {
+    width: 100vh;
+    text-align: center;
+}
+
+
+/* main banner -----------------------------------------*/
+
+section.banner {
+    background-image: url("../Imagenes/bowl-and-pet-daities-on-green-background 1.png");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    color: #3C2313;
+    background-size: cover;
+    height: 490px;
+    text-align: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.banner h3 {
+    background: white;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 12px;
+    display: block;
+}
+
+section.banner .btn-bgstroke {
+    background: #F0A83E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.banner p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+/* main destacados--------------------------------------*/
+
+section.destacados {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+section.destacados a {
+    color: #666666;
+}
+
+
+/* ?? */
+
+.destacados li:nth-child(2)::before {
+    content: “\2010”;
+    color: #666666;
+}
+
+
+/* section .destacados article::before {
+    content: url("../Imagenes/");
+    visibility: visible;
+} */
+
+
+/* main contactanos-------------------------------------*/
+
+section.contactanos {
+    flex-direction: column;
+    padding: 3vh;
+}
+
+
+/* footer ----------------------------------------------*/
+
+footer {
+    background-color: #3C2313;
+    color: white;
+}
+
+footer .suscripcion {
+    background-color: var(--main-color);
+}
+
+
+/* media -----------------------------------------------*/
+
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        --bg-page: white;
+        --main-color: black;
     }
-    picture{
-        align-self: flex-end;
-        }
+} */
+
+@media screen and (min-width: 950px) {
+    /*mobile first. cuando la pantalla sea mas grande */
+    body {
+        color: var(--main-color);
+        background-color: var(--bg-page);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
