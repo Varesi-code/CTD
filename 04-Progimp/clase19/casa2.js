@@ -1,6 +1,6 @@
 //importo
 // const objShit = require("fs");
-const manteca = require("./helper2")
+const casa = require("./helper2")
 
 const perro = {
     "color": "negro",
@@ -9,4 +9,4 @@ const perro = {
 }
 
 //invocar objeto
-manteca.escribir("./archivoCasa.txt", perro)
+casa.escribir("archivoCasa", perro)

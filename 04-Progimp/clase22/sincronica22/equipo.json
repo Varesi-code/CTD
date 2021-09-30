@@ -1,0 +1,137 @@
+[
+    {
+        "nombre": "Retha",
+        "apellido": "McCowan",
+        "edad": 56,
+        "email": "rmccowan0@de.vu",
+        "empresa": "Gabcube",
+        "area": "Services",
+        "puesto": "Recruiter"
+    },
+    {
+        "nombre": "Phillip",
+        "apellido": "Innis",
+        "edad": 34,
+        "email": "pinnis1@typepad.com",
+        "empresa": "Voomm",
+        "area": "Research and Development",
+        "puesto": "Business Systems Development Analyst"
+    },
+    {
+        "nombre": "Addie",
+        "apellido": "Kubanek",
+        "edad": 67,
+        "email": "akubanek2@tmall.com",
+        "empresa": "Brightbean",
+        "area": "Business Development",
+        "puesto": "Account Coordinator"
+    },
+    {
+        "nombre": "Tedda",
+        "apellido": "Falk",
+        "edad": 43,
+        "email": "tfalk3@alexa.com",
+        "empresa": "Tagcat",
+        "area": "Services",
+        "puesto": "Sales Associate"
+    },
+    {
+        "nombre": "Jabez",
+        "apellido": "McLaughlin",
+        "edad": 27,
+        "email": "jmclaughlin4@yale.edu",
+        "empresa": "Lajo",
+        "area": "Engineering",
+        "puesto": "Chief Design Engineer"
+    },
+    {
+        "nombre": "Hilario",
+        "apellido": "Warricker",
+        "edad": 19,
+        "email": "hwarricker5@mozilla.com",
+        "empresa": "Trupe",
+        "area": "Engineering",
+        "puesto": "Office Assistant III"
+    },
+    {
+        "nombre": "Beauregard",
+        "apellido": "Dayton",
+        "edad": 59,
+        "email": "bdayton6@webs.com",
+        "empresa": "Ainyx",
+        "area": "Human Resources",
+        "puesto": "Mechanical Systems Engineer"
+    },
+    {
+        "nombre": "Rebekkah",
+        "apellido": "Varley",
+        "edad": 24,
+        "email": "rvarley7@apple.com",
+        "empresa": "Yodo",
+        "area": "Training",
+        "puesto": "Human Resources Assistant III"
+    },
+    {
+        "nombre": "Freeman",
+        "apellido": "Holworth",
+        "edad": 55,
+        "email": "fholworth8@boston.com",
+        "empresa": "Youfeed",
+        "area": "Sales",
+        "puesto": "Geological Engineer"
+    },
+    {
+        "nombre": "Walden",
+        "apellido": "Georgi",
+        "edad": 31,
+        "email": "wgeorgi9@yale.edu",
+        "empresa": "Lazz",
+        "area": "Accounting",
+        "puesto": "Registered Nurse"
+    },
+    {
+        "nombre": "Aldon",
+        "apellido": "Daleman",
+        "edad": 68,
+        "email": "adalemana@gnu.org",
+        "empresa": "Browsezoom",
+        "area": "Research and Development",
+        "puesto": "Senior Editor"
+    },
+    {
+        "nombre": "Martynne",
+        "apellido": "Jedrzejkiewicz",
+        "edad": 75,
+        "email": "mjedrzejkiewiczb@google.cn",
+        "empresa": "Mita",
+        "area": "Business Development",
+        "puesto": "Accountant IV"
+    },
+    {
+        "nombre": "Caren",
+        "apellido": "Schnieder",
+        "edad": 48,
+        "email": "cschniederc@ifeng.com",
+        "empresa": "Browsebug",
+        "area": "Sales",
+        "puesto": "Food Chemist"
+    },
+    {
+        "nombre": "Cam",
+        "apellido": "Santore",
+        "edad": 28,
+        "email": "csantored@google.ru",
+        "empresa": "Youopia",
+        "area": "Training",
+        "puesto": "Recruiter"
+    },
+    {
+        "nombre": "Mattie",
+        "apellido": "Mottley",
+        "edad": 65,
+        "email": "mmottleye@angelfire.com",
+        "empresa": "Izio",
+        "area": "Business Development",
+        "puesto": "General Manager"
+    }
+]

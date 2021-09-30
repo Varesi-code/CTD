@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #0074d9;
+  color: #111;
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul a {
+  padding: 1.5em;
+  color: #fff;
+}
+
+header nav ul a:hover {
+  background-color: #ff851b;
+}
+
+section article {
+  padding: 1.5em;
+  background: #fff;
+  margin-bottom: 1.5em;
+}
+
+section article h2 {
+  color: #ff851b;
+}
+/*# sourceMappingURL=main.css.map */

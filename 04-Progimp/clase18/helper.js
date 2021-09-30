@@ -1,6 +1,7 @@
+//de json a objeto
 const fs = require('fs');
-
 let texto = fs.readFileSync("text.txt", "utf8")
+
 console.log(texto);
 texto += "hola como estas?"
 fs.writeFileSync("text.txt", "modifico el archivo txt")

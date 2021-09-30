@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200;600&display=swap');
-
-:root{
+:root {
     --bg-page: white;
     --text-page: black;
 }
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-    color:var(--text-page);
-    background-color:var(--bg-page);
-    max-width:90%;
+    color: var(--text-page);
+    background-color: var(--bg-page);
+    max-width: 90%;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -21,37 +21,37 @@ body {
     gap: 20px;
 }
 
-hr{
-margin:20px ;
-background-color: var(--text-page);
+hr {
+    margin: 20px;
+    background-color: var(--text-page);
 }
 
-picture{
-align-self: center;
+picture {
+    align-self: center;
 }
 
-picture img{
-    border:1px solid var(--text-page);
+picture img {
+    border: 1px solid var(--text-page);
 }
 
-@media (prefers-color-scheme : dark){
-   body{  
-       --bg-page: white;
-       --text-page: black;
-   }
-}
-@media screen and (min-width: 950px){
-    /*mobile first. cuando la pantalla sea mas grande */
-    body{ 
-        color:var(--text-page);
-    background-color:var(--bg-page);
-    max-width:60%;
-    margin: 10vh auto;
-    flex-direction: row;
-    gap: 10vh;
-
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg-page: white;
+        --text-page: black;
     }
-    picture{
+}
+
+@media screen and (min-width: 950px) {
+    /*mobile first. cuando la pantalla sea mas grande */
+    body {
+        color: var(--text-page);
+        background-color: var(--bg-page);
+        max-width: 60%;
+        margin: 10vh auto;
+        flex-direction: row;
+        gap: 10vh;
+    }
+    picture {
         align-self: flex-end;
-        }
+    }
 }

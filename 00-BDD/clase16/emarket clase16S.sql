@@ -22,7 +22,7 @@ right join categorias on categorias.CategoriaID = productos.CategoriaID
 where productos.ProductoID is not null;
 
 -- 4. Para cada categoría listar el promedio del precio unitario de sus productos.
-| 
+
 -- 5. Para cada cliente, indicar la última factura de compra. Incluir a los clientes que
 -- nunca hayan comprado en e-market.
 

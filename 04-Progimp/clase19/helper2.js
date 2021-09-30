@@ -10,12 +10,18 @@ const fs = require('fs');
 
 const casa = {
     leer: function(archivoJson) {
+        //lee archivo y guarda en variable de texto
         const arhivoLeido = fs.readFileSync(__dirname + "/" + archivoJson + ".json", "utf8");
+        //convierto de texto a código js, en éste caso un arrayDeObjetos
         const arrayDeObjetos = JSON.parse(archivoLeido)
+        return arrayDeObjetos;
     },
 
     escribir: function(nombreArchivo, arrayDeObjetos) {
+        //creamos un archivo o si existiera, lo pisa. 
         return fs.writeFileSync(
+            //3. Acá creamos el json
+            //De array lo pasamos a json (texto)
             __dirname + "/" + nombreArchivo + ".json",
             JSON.stringify(arrayDeObjetos, null, 2)
         );
