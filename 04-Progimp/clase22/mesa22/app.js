@@ -60,6 +60,19 @@ const carrera = {
         return this.autos.reduce((acc, auto) => acc + auto.puntaje, 0)
     },
 
+    //revisar
+    //I RETORNA ARRAY DE AUTOS QUE CUMPLAN CON CONDICIONES
+    generarTanda: function(pesoRequerido, cilindrada) {
+        //autosPorTanda cantidad maxima
+        const autosCilindrada = this.filtrarPorCilindrada(cilindrada)
+            //filtrar por peso menos o igual a uno enviado como argumento
+        const tanda = autosCilindrada.filter(auto => auto.peso <= pesoRequerido);
+        return tanda.slice(0, this.autosPortanda);
+
+    },
+    //J peso promedio de los vehículos que componen la tanda
+
+    //K  calcule el podio en función del puntaje de los pilotos y muestre el resultado
 
 }
 
@@ -99,13 +112,14 @@ console.log(v, oo + " H. calcularPuntajeTotal ");
 console.log(carrera.calcularPuntajeTotal());
 
 
-console.log(v, oo + " I. ");
+console.log(v, oo + " I. generarTanda ");
+// Ejecución aquí
+carrera.listarAutos(carrera.generarTanda(1378.04, 216));
+
+console.log(v, oo + " J. pesoPromedio");
 // Ejecución aquí
 
-console.log(v, oo + " J. ");
-// Ejecución aquí
-
-console.log(v, oo + " K. ");
+console.log(v, oo + " K. listarPodio");
 // Ejecución aquí
 
 //https://docs.google.com/document/d/1tqjvxd24rRCIQ4ttrGXUqTycd9gKtTbtgpvPw7U5GIE/edit
