@@ -41,7 +41,7 @@ const carrera = {
         const bici = this.buscarPorId(id);
         if (bici) {
             bici.peso += kg;
-            jsonHelper.escribirJson("bicicletas", this.bicis);
+            archivos.escribirJson("bicicletas", this.bicis);
             console.log("guardado ok");
         } else {
             console.log("no hay bici con el id" + id);
@@ -89,9 +89,9 @@ console.log(o);
 
 console.log(v, oo + " .J. ");
 // Ejecución aquí
-carrera.listarBicicletas(carrera.aumentarPeso(100, 1));
+carrera.listarBicicletas(carrera.aumentarPeso(100, 11));
 //chequear que 
-carrera.listarBicicletas(carrera.buscarPorId(1));
+carrera.listarBicicletas(carrera.buscarPorId(11));
 
 console.log(v, oo + " .K. ");
 // Ejecución aquí

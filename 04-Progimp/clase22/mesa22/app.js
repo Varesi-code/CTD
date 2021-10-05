@@ -73,6 +73,18 @@ const carrera = {
     //J peso promedio de los vehículos que componen la tanda
 
     //K  calcule el podio en función del puntaje de los pilotos y muestre el resultado
+    listarPodio: function(autosTanda) {
+        if (autosTanda.length > 0) {
+            let orden = autosTanda.sort((a, b) => b.puntaje - a.puntaje);
+            console.log(
+                `El ganandor es: ${orden[0].piloto}, con un puntaje de ${orden[0].puntaje}.
+El segundo es: ${orden[1].piloto}, con un puntaje de ${orden[1].puntaje}.
+El tercer puesto es para: ${orden[2].piloto}, con un puntaje de ${orden[2].puntaje}.`
+            );
+        } else {
+            console.log(`no hay ganadores`);
+        }
+    }
 
 }
 
