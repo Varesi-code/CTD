@@ -1,0 +1,13 @@
+¿Las ip públicas son las mismas? ¿por qué?
+
+Sin utilizar la VPN puedes ver el siguiente video? Ahora activala e intenta verlo, ¿que es lo que sucedió?¿Por qué?
+
+
+Utilizando Tor ¿pudimos localizar la IP ?  
+¿Las velocidades en los test son diferentes? ¿Por qué crees que sucede esto?
+
+
+¿Que significa el valor del ping?
+
+
+El valor del ping, ¿varia entre las diferentes opciones? ¿Por qué?

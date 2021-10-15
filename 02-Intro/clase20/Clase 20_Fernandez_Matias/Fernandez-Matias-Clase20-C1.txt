@@ -1,0 +1,59 @@
+.IP navegadores:
+
+chrome: 181.26.25.116
+opera VPN: 77.111.246.38
+TOR: 107.189.30.86
+
+Preguntas Mesa Ip:
+
+.Las IP publicas son diferentes porque cada una estan conectadas en lugares diferentes, y ka VPN y TOR estan encriptadas.
+
+.Sin utilizar la VPN puedo ver el video. Al activarla tambien puedo pero la velocidad de carga es extremadamente largo.
+
+.si, me genero un IP al usar tor.
+
+
+
+
+
+.Speed test
+
+.chrome:
+ping ms
+1
+
+DESCARGA Mbps
+47.18
+ CARGA Mbps
+51.39
+
+.opera VPN:
+
+ PING ms
+207
+ DESCARGA Mbps
+1.13
+ CARGA Mbps
+8.49
+
+.TOR:
+
+ Ping ms
+300
+Descarga Mbps
+9.98
+Carga Mbps
+6.03
+
+
+Preguntas SpeedTest
+
+.Son todas diferentes porque estamos conectados con la IP en diferentes partes del globo.
+
+. El ping es el tiempo que tarda en transmitirse un paquete de datos dentro de la red.
+
+.Si, porque al estar con una IP que no sea la nuestra, el ping varia mucho.
+
+
+
+

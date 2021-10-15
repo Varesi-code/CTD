@@ -1,0 +1,9 @@
+¿Porqué un lenguaje de programacioń sólo puede utilizarse en algunos SO y en otros no? 
+Creo que debido a si son lenguajes compilados o interpretados. 
+
+¿Qué tipo de máquina virtual es VirtualBOX?
+Es un tipo de máquina virtual de sistemas. 
+Al contrario de las máquinas virtuales de procesos, por ejemplo la de java.
+
+¿Si tengo màs de una máquina virtual instalada, y una se rompe, ¿ésto afecta a las demás? ¿Porqué?
+No. Ya que cada máquina virtual está isolada, es decir una separada de otra.
