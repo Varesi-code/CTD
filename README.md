@@ -34,6 +34,7 @@
     <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/04-Progimp"> 💻 Programación Imperativa</a></li>
   </ol>
 </details>
+<details open="open">
 <summary><h2 style="display: inline-block">Bimestre 2 🐣</h2></summary>
   <ol start="0">
     <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/01-Testing">🧰Testing</a></li>
