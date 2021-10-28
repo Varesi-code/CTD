@@ -25,24 +25,22 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary><h2 style="display: inline-block">Camada1 - Bimestre 1 </h2></summary>
+  <summary><h2 style="display: inline-block">Bimestre 1 🥚</h2></summary>
   <ol start="0">
-    <li>
-      <a href="https://github.com/Varesi-code/CTD/tree/main/00-BDD">Base de Datos</a>
-    </li>
-    <li>
-      <a href="https://github.com/Varesi-code/CTD/tree/main/01-Front">Front End I</a>
-      <!-- <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul> -->
-    </li>
-    <li><a href="https://github.com/Varesi-code/CTD/tree/main/02-Intro">Introducción a la Informática</a></li>
-    <li><a href="https://github.com/Varesi-code/CTD/tree/main/03-Metodologias">Metodologías de Trabajo</a></li>
-    <li><a href="https://github.com/Varesi-code/CTD/tree/main/04-Progimp">Programación Imperativa</a></li>
-    <!-- <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li> -->
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/00-BDD"> 🗄️ Base de Datos</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/01-Front"> 🎨Front End I</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/02-Intro"> 📡 Introducción a la Informática</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/03-Metodologias"> ♻️ Metodologías de Trabajo</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B1/04-Progimp"> 💻 Programación Imperativa</a></li>
+  </ol>
+</details>
+<summary><h2 style="display: inline-block">Bimestre 2 🐣</h2></summary>
+  <ol start="0">
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/01-Testing">🧰Testing</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/02-Infraestructura"> 🧾 Infraestructura</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/03-POO"> 💻 Programación Orientada a Objetos</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/04-FrontEnd_II"> 👩‍💻 FrontEnd II</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B2/05-Design_Thinking"> 💭 Design Thinking</a></li>
   </ol>
 </details>
 
