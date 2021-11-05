@@ -47,5 +47,5 @@ se puede inclusive crear una variable para cada uno de los atributos de las etiq
             
             <a class="${urlDeImagenes[3]}"><img src="${urlDeImagenes[3]}"><img/></a>
         </div>`; 
-        contenedor += tarjetasImg;
+        contenedor.innerHTML += tarjetasImg;
     */

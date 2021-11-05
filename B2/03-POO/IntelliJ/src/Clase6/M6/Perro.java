@@ -31,8 +31,8 @@ public class Perro {
         this.anioNacimiento =  LocalDate.of(2009,9,17);
     }
 
-    public LocalDate calcularEdad() {
-        return getYear(LocalDate.now().minusYears(anioNacimiento.getYear()));
+    public int calcularEdad() {
+        return anioNacimiento.getYear();
     }
 
     public void sePuedePerder(){
