@@ -9,14 +9,21 @@
 // console.log(urlDeImagenes)
 
 //ETAPA 2 --------------- Mesa de trabajo --------------------------
+//capturar elemento que quiero modificar
 let imagenes = document.querySelectorAll("a");
 
+//devuelve un elemento de tipo array. itero con un metodo para aplicar lo siguiente en cada uno de los elementos del array (apariciones del nodo seleccionado en el DOM)
 imagenes.forEach(function(element, indice) {
+    //capturar el resultado del prompt para ubicarlo luego
     let urlDeImagenes = prompt("Ingresa la imagen " + (indice + 1));
+    //crear el nodo img para poner luego la imagen
     let imgElement = document.createElement("img");
+    //insertar el atributo href del nodo a y el atributo target con su valor
     element.setAttribute("href", urlDeImagenes);
     element.setAttribute("target", "_blank");
+    //sumar dinamicamente la etiqueta img al nodo a 
     element.appendChild(imgElement);
+    //sumar el atributo src a img
     imgElement.src = urlDeImagenes;
 
 })
@@ -47,5 +54,11 @@ se puede inclusive crear una variable para cada uno de los atributos de las etiq
             
             <a class="${urlDeImagenes[3]}"><img src="${urlDeImagenes[3]}"><img/></a>
         </div>`; 
+
+    
         contenedor.innerHTML += tarjetasImg;
     */
+
+
+
+        //end of script
