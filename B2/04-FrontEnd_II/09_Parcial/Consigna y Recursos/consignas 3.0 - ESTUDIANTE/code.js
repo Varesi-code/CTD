@@ -35,35 +35,55 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
- 
-
-
-}
+  anio = new Date().getFullYear();
+  datosPersona.nombre = prompt("¿Cómo te llamás?");
+  datosPersona.edad = anio - (prompt(`Hola, ${datosPersona.nombre}! ¿En qué año naciste?`)) ;
+  while (datosPersona.edad === null || /\D/.test(datosPersona.edad) || datosPersona.edad === "" ) {
+    datosPersona.edad = prompt(`Oops!😅 Parece que ingresaste un año inválido, ${datosPersona.nombre}! ¿En qué año naciste?`);
+  };
+  datosPersona.ciudad = prompt("¿Dónde vivís?");
+  datosPersona.interesPorJs = prompt("¿Te interesa JavaScript?");
+  return datosPersona;
+};
 
 function renderizarDatosUsuario() {
   /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
   obtenerDatosDelUsuario();
   /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
-  
-
-
-}
-
+  document.getElementById("nombre").innerText = datosPersona.nombre;
+  document.getElementById("edad").innerText = datosPersona.edad;
+  document.getElementById("ciudad").innerText = datosPersona.ciudad;
+  document.getElementById("javascript").innerText = datosPersona.interesPorJs;
+};
 
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
-  
-
-
-}
+  let contenedor = document.querySelector("#fila");
+  contenedor.innerHTML = "";
+  listado.forEach((element) => {
+    contenedor.innerHTML += `
+    <div class="caja">
+      <img src="${element.imgUrl}" alt="${element.lenguajes}">
+      <p class="lenguajes"> ${element.lenguajes}</p>
+      <p class="bimestre">${element.bimestre}</p>
+    </div>
+    `;
+  })
+};
 
 function alternarColorTema() {
   /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
- 
-  
-
-
-}
+  document.querySelector("#sitio").classList.toggle("dark");
+};
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
+const sobreMi = document.getElementById("sobre-mi");
+window.addEventListener("keypress", (e) => {
+  console.log(e.key)
+  if (e.key === 'f' || e.key === 'F') {
+    sobreMi.classList.remove("oculto");
+    }
+  });
+
+
 
