@@ -2,11 +2,12 @@
 public class PrincipalMain {
 
 	public static void main(String[] args) {
-
-		CajaAhorro ca = new CajaAhorro();
+		Cuenta ca= new CuentaCorriente();
 		ca.setSaldo(100);
-		ca.cobrarIntereses();
-		
+
+		if (ca instanceof CajaAhorro) {
+		((CajaAhorro)ca).cobrarIntereses();
+		}
 		System.out.println(ca.informarSaldo());
 		
 	}

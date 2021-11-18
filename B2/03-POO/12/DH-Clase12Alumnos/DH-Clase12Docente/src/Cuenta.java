@@ -7,6 +7,8 @@ public abstract class Cuenta {
 	public void depositar(double monto) {
 		saldo += monto;
 	}
+
+	public void depositar
 	
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;

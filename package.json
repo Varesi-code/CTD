@@ -1,0 +1,23 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "test1",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varesi-code/CTD.git"
+  },
+  "keywords": [
+    "test",
+    "jest"
+  ],
+  "author": "natalia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varesi-code/CTD/issues"
+  },
+  "homepage": "https://github.com/Varesi-code/CTD#readme"
+}

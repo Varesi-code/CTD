@@ -3,7 +3,7 @@ public class CuentaCorriente extends Cuenta{
 	
 	private double descubiertoPermitido;
 	
-	
+
 
 	public double getDescubiertoPermitido() {
 		return descubiertoPermitido;
