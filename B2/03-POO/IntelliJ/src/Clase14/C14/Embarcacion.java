@@ -1,26 +1,19 @@
 package Clase14.C14;
 
 
-public class Embarcacion {
+public abstract class Embarcacion {
     private double precioBase;
     private double valorAdicional;
     private int anioFabricacion;
     private double esloraMetros;
+    private Capitan capitan;
 
-    public Embarcacion(double precioBase, double valorAdicional, int anioFabricacion, double esloraMetros) {
-        ;
-        this.precioBase = precioBase;
-        this.valorAdicional = valorAdicional;
-        this.anioFabricacion = anioFabricacion;
-        this.esloraMetros = esloraMetros;
-    }
 
     public double calcularAlquiler() {
         if ( this.getAnioFabricacion() > 2020){
             return this.getPrecioBase() + this.getValorAdicional();
         }
         return this.getPrecioBase();
-
     };
 
     public double getPrecioBase() {

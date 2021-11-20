@@ -5,7 +5,11 @@ public class Velero extends Embarcacion{
     private int cantMastiles;
 
     public Velero( double precioBase,double valorAdicional, int anioFabricacion,double esloraMetros, int cantMastiles) {
-        super( precioBase, valorAdicional, anioFabricacion, esloraMetros);
+        super();
+        setPrecioBase(precioBase);
+        setValorAdicional(valorAdicional);
+        setAnioFabricacion(anioFabricacion);
+        setEsloraMetros(esloraMetros);
         this.cantMastiles = cantMastiles;
     }
     public boolean esGrande() {

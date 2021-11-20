@@ -5,7 +5,11 @@ public class Yate extends Embarcacion implements Comparable{
     private int cantCamarotes;
 
     public Yate( double precioBase, double valorAdicional, int anioFabricacion, double esloraMetros, int cantCamarotes) {
-        super( precioBase, valorAdicional, anioFabricacion, esloraMetros);
+        super();
+        setPrecioBase(precioBase);
+        setValorAdicional(valorAdicional);
+        setAnioFabricacion(anioFabricacion);
+        setEsloraMetros(esloraMetros);
         this.cantCamarotes = cantCamarotes;
     }
 
