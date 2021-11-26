@@ -1,0 +1,12 @@
+{
+    "name": "calculadora_light_con_error-20211118t173150z-001",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --env=jsdom"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

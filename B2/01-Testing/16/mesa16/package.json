@@ -1,0 +1,12 @@
+{
+    "name": "mesa16",
+    "version": "1.0.0",
+    "description": "",
+    "main": "calc.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
