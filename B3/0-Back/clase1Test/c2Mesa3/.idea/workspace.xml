@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09f7a61a-2864-47e4-a7ae-53961a96c11d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/src/MesaTrabajo/AreaCalculable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/src/MesaTrabajo/Circulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/src/MesaTrabajo/Cuadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../B2/03-POO/IntelliJ/src/untitled1/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/Clase2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/Clase2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/Test/presencial/LiquidadorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c1_0821_clase2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/c2Mesa3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/src/ArmadorMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/src/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/src/MenuClasico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/src/MenuInfantil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/c2Mesa3/src/MenuVegetariano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/clase1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/out/production/clase1/presencial/Grupo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/out/production/clase1/presencial/Persona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/out/test/clase1/presencial/GrupoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/src/presencial/Grupo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/src/presencial/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/clase1/test/presencial/GrupoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/production/Clase2/presencial/Empleado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/production/Clase2/presencial/EmpleadoContratado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/production/Clase2/presencial/EmpleadoEfectivo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/production/Clase2/presencial/Liquidador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/production/Clase2/presencial/LiquidadorEmpleadoEfectivo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/out/test/Clase2/presencial/LiquidadorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/src/presencial/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/src/presencial/EmpleadoContratado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/src/presencial/EmpleadoEfectivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/src/presencial/Liquidador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0-Back/src/presencial/LiquidadorEmpleadoEfectivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="25sxOXGgqBr9m7QQvIFHd37VMb5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09f7a61a-2864-47e4-a7ae-53961a96c11d" name="Changes" comment="" />
+      <created>1646329567087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646329567087</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

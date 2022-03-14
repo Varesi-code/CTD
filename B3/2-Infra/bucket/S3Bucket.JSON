@@ -1,0 +1,67 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Automatizamos Bucket S3",
+    "Parameters": {
+        "BucketName": {
+            "Type": "String",
+            "Description": "El nombre de mi Bucket S3"
+        }
+    },
+    "Metadata": {
+        "AWS::CloudFormation::Interface": {
+            "ParametersGroup": [
+                {
+                    "Label": {
+                        "default": "Bucket S3"
+                    }
+                }
+            ]
+        },
+        "Parameters": [
+            "BucketName"
+        ],
+        "ParametersLabel": {
+            "BucketName": {
+                "default": "Mesa5"
+            }
+        },
+        "AWS::CloudFormation::Designer": {
+            "3df0058b-fa06-4a53-8917-79b4ade63530": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 240,
+                    "y": 170
+                },
+                "z": 1,
+                "embeds": []
+            }
+        }
+    },
+    "Resources": {
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": {
+                    "Ref": "BucketName"
+                },
+                "PublicAccessBlockConfiguration": {
+                    "BlockPublicAcls": true,
+                    "BlockPublicPolicy": true,
+                    "IgnorePublicAcls": true,
+                    "RestrictPublicBuckets": true
+                },
+                "VersioningConfiguration": {
+                    "Status": "Enabled"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "3df0058b-fa06-4a53-8917-79b4ade63530"
+                }
+            }
+        }
+    }
+}

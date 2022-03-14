@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CodeStyle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Intellij/2016/CodeStyle.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
