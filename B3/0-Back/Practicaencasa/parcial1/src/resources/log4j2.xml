@@ -1,0 +1,57 @@
+<Configuration>
+    <Appenders>
+        <File name="A1" fileName="A1.log" >
+            <Log4j1XmlLayout />
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level - %m%n"/>
+        </Console>
+
+        <!-- https://github.com/arrowhead-f/core-java/blob/master/authorization/config/log4j2.properties
+            Configurar el appender JDBCAppender  -->
+
+        <!--<Jdbc name="databaseAppender" tableName="TableNameA" ignoreExceptions="false">
+            <PoolingDriver connectionString="jdbc:h2:${sys:java.io.tmpdir}/h2/h2_test0;TRACE_LEVEL_SYSTEM_OUT=0" driverClassName="org.h2.Driver">
+                    <!- PoolableConnectionFactory default values ->
+                <PoolableConnectionFactory
+                        autoCommitOnReturn="true"
+                        cacheState="false"
+                        defaultAutoCommit="false"
+                        defaultCatalog=""
+                        defaultQueryTimeoutSeconds="0"
+                        defaultReadOnly="false"
+                        defaultTransactionIsolation="-1"
+                        fastFailValidation="true"
+                        maxConnLifetimeMillis="-1"
+                        maxOpenPreparedStatements="8"
+                        poolStatements="false"
+                        rollbackOnReturn="true"
+                        validationQuery=""
+                        validationQueryTimeoutSeconds="-1">
+                </PoolableConnectionFactory>
+            </PoolingDriver>
+            <ColumnMapping name="ColumnA" />
+        </Jdbc> -->
+
+    </Appenders>
+    <Loggers>
+        <Logger name="org.apache.log4j.xml" level="debug">
+            <AppenderRef ref="A1"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+
+
+<!--Crear una tabla Logs en la base de datos:
+        CREATE TABLE LOGS
+              (
+                     USER_ID VARCHAR(20) NOT NULL,
+                     DATED   DATETIME NOT NULL,
+                     LOGGER  VARCHAR(50) NOT NULL,
+                    LEVEL   VARCHAR(10) NOT NULL,
+                    MESSAGE VARCHAR(1000) NOT NULL
+            ); -->

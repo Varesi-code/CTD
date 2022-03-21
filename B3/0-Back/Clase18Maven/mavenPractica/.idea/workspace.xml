@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0703fcea-afd6-4520-839c-d9fc2627c902" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/.idea/Clase15Integradora.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/clase15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/dao/DomicilioDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/dao/PacienteDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/modelo/Domicilio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/modelo/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/clase15/src/presencial/servicio/PacienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/presencial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/dao/DomicilioDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/dao/PacienteDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/modelo/Domicilio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/modelo/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Clase15Integradora/presencial/src/presencial/servicio/PacienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/Clase13_IntegradorDAO.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/Test/Presencial/Service/PacienteServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/Test/Presencial/Service/PacienteServiceTestScript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/DB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/Dao/DomicilioDAOH2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/Dao/IDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/Dao/PacienteDAOH2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/Service/PacienteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/modelo/Domicilio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/production/Clase13_IntegradorDAO/Presencial/modelo/Paciente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/test/Clase13_IntegradorDAO/Presencial/Service/PacienteServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/out/test/Clase13_IntegradorDAO/Presencial/Service/PacienteServiceTestScript.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/Dao/DomicilioDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/Dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/Dao/PacienteDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/Service/PacienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/modelo/Domicilio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DAOIntegrador/src/Presencial/modelo/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Clase18Maven/mavenPractica/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/Resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/Test/clinica/dao/OdontologoDaoH2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/Varesi-Natalia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/production/Varesi-Natalia/clinica/dao/IDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/production/Varesi-Natalia/clinica/dao/OdontologoDaoH2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/production/Varesi-Natalia/clinica/modelo/Odontologo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/production/Varesi-Natalia/clinica/service/OdontologoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/production/Varesi-Natalia/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/out/test/Varesi-Natalia/clinica/dao/OdontologoDaoH2Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/src/clinica/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/src/clinica/dao/OdontologoDaoH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/src/clinica/modelo/Odontologo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Parcial/Varesi-Natalia/src/clinica/service/OdontologoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/Practicaencasa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/notas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/parcial1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/app/daoEstrategias/DaoEntityH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/app/daoEstrategias/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/app/entidades/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/app/persistenceServices/ServiceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/RELEASE-NOTES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-1.2-api-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-1.2-api-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-1.2-api-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-api-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-api-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-api-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-appserver-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-appserver-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-appserver-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-cassandra-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-cassandra-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-cassandra-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-core-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-core-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-core-2.17.2-tests.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-core-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-couchdb-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-couchdb-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-couchdb-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-docker-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-docker-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-docker-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-flume-ng-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-flume-ng-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-flume-ng-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-iostreams-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-iostreams-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-iostreams-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jcl-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jcl-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jcl-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jdbc-dbcp2-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jdbc-dbcp2-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jdbc-dbcp2-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jmx-gui-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jmx-gui-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jmx-gui-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jpa-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jpa-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jpa-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jul-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jul-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-jul-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-liquibase-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-liquibase-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-liquibase-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb3-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb3-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb3-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb4-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb4-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-mongodb4-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j-impl-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j-impl-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j-impl-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j18-impl-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j18-impl-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-slf4j18-impl-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-boot-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-boot-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-boot-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-cloud-config-client-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-cloud-config-client-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-spring-cloud-config-client-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-taglib-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-taglib-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-taglib-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-to-slf4j-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-to-slf4j-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-to-slf4j-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-web-2.17.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-web-2.17.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/apache-log4j-2.17.2-bin/log4j-web-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Practicaencasa/parcial1/src/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../academia/academia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/clase15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/dao/DomicilioDAOH2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/dao/IDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/dao/PacienteDAOH2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/modelo/Domicilio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/modelo/Paciente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/production/clase15/presencial/servicio/PacienteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase15V2/out/test/clase15/presencial/servicio/PacienteServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase10Logging/clase10/src/presencial/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase10Logging/clase10/src/presencial/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase14DAO/clase14/src/presencial/bd/BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase14DAO/clase14/src/presencial/bd/BD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase14DAO/clase14/src/presencial/dao/MedicamentoDaoH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Clase14DAO/clase14/src/presencial/dao/MedicamentoDaoH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Clase9Repaso.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="26ZBc1Eeyv2dTR4Fmy7ZlM3uOJk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="clinica" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.OdontologoDaoH2Test (1)">
+    <configuration name="OdontologoDaoH2Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenPractica" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OdontologoDaoH2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OdontologoDaoH2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenPractica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.OdontologoDaoH2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OdontologoDaoH2Test (1)" />
+        <item itemvalue="JUnit.OdontologoDaoH2Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0703fcea-afd6-4520-839c-d9fc2627c902" name="Changes" comment="" />
+      <created>1647621306349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647621306349</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

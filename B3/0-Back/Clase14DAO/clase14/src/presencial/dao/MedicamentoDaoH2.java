@@ -24,19 +24,16 @@ public class MedicamentoDaoH2 implements IDao<Medicamento>{
             //ejecutar
             preparedStatement.executeUpdate();
             //loggear
-        }
-        catch (Exception e){
+        }catch (Exception e){
             e.printStackTrace();
         }
         finally {
             try {
                 connection.close();
-            }
-            catch (SQLException t){
+            }catch (SQLException t){
                 t.printStackTrace();
             }
         }
-
         return medicamento;
     }
 

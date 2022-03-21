@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.App-container {
+  width: 70%;
+  height: auto;
+  background-color: white;
+}
+
+.title {
+  padding: 10px;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px black;
+  color: white;
+}

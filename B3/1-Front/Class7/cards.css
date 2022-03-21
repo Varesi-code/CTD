@@ -1,0 +1,36 @@
+.cards_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 500px;
+  border: 2px solid rgba(189, 187, 187, 0.795);
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.blog_title {
+  margin-bottom: 10px;
+}
+
+.content {
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sectionWrapper {
+  padding: 20px;
+}
+
+.btn {
+  background-color: crimson;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}

@@ -1,0 +1,36 @@
+Cada vez que queramos interactuar con la base de datos necesitamos realizar una serie de pasos:
+//1 cargar el driver
+//2 obtener la conexion
+//3 ejecutar la consulta
+//4 cerrar la conexion
+
+    public static void crearBD() {
+        Connection connection=null;
+        try{
+
+        //1 cargar el driver y 2 obtener la conexion
+            connection = getConnection();
+
+        //3 ejecutar la consulta
+            Statement statement= connection.createStatement();
+            statement.execute(SQL_CREATE_TABLE);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    //4 cerrar la conexion
+    finally {
+            try {
+                connection.close();
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    //1y2
+    public static Connection getConnection() {
+            Class.forName("org.h2.Driver").newInstance();
+            return DriverManager.getConnection("jdbc:h2:~/nombreTabla","sa","");
+        }

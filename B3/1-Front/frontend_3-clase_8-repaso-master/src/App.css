@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding-top: 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.panel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.RED {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: red;
+}
+.BLUE {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: blue;
+}
+
+.YELLOW {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: yellow;
+}
+
+.GREEN {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: green;
+}
+.LIME {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: LIME;
+}
+.ORANGE {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: ORANGE;
+}
+.BROWN {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: BROWN;
+}
+.MAGENTA {
+  width: 25%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  background-color: MAGENTA;
+}
