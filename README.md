@@ -45,9 +45,9 @@
   </ol>
 </details>
 <details open="open">
-<summary><h2 style="display: inline-block">Bimestre 3 🐣</h2></summary>
+<summary><h2 style="display: inline-block">Bimestre 3 🐥 </h2></summary>
   <ol start="0">
-    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B3/">💻 Back End I</a></li>
+    <li><a href="https://github.com/Varesi-code/CTD/tree/main/B3/"> 💻 Back End I</a></li>
     <li><a href="https://github.com/Varesi-code/CTD/tree/main/B3/"> 🧾 Infraestructura II</a></li>
     <li><a href="https://github.com/Varesi-code/CTD/tree/main/B3/"> 👩‍💻 FrontEnd III</a></li>
     <li><a href="https://github.com/Varesi-code/CTD/tree/main/B3/"> 💭 UX/UI</a></li>
