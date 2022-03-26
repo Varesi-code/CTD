@@ -1,0 +1,4 @@
+Pedro;Rocha;0;100000
+Peter;Rocha;1;50487
+Laura;Rocha;2;14258
+Leandro;Rocha;3;65824
