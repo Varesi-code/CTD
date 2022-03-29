@@ -59,12 +59,69 @@ public class PacienteDAOH2 implements IDao<Paciente>{
 
     @Override
     public Paciente update(Paciente paciente) {
-        return null;
+        Connection connection = null;
+        try {
+            connection = getConnection();
+            //llamo domicilio y guardo id en paciente
+            DomicilioDAOH2 domicilioDAOH2 = new DomicilioDAOH2();
+            Domicilio domicilio = domicilioDAOH2.insert(paciente.getDomicilio());
+            paciente.getDomicilio().setId(domicilio.getId());
+            //insert paciente
+            //preparo statement
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE pacientes SET nombre = ?, apellido = ?, email = ?, dni = ?, fecha_ingreso = ?, domicilio_id = ? WHERE id = ?");
+            preparedStatement.setString(1, paciente.getApellido());
+            preparedStatement.setString(2, paciente.getNombre());
+            preparedStatement.setString(3, paciente.getEmail());
+            preparedStatement.setInt(4, paciente.getDni());
+            preparedStatement.setDate(5, Date.valueOf(paciente.getFechaIngreso()));
+            preparedStatement.setInt(6, paciente.getDomicilio().getId());
+            preparedStatement.setInt(7, paciente.getId());
+            //ejecuto
+            preparedStatement.executeUpdate();
+            //obtengo id
+            ResultSet keys = preparedStatement.getGeneratedKeys();
+            while (keys.next()) {
+                paciente.setId(keys.getInt(1));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+            return paciente;
+        }
+
     }
 
     @Override
     public void delete(int id) {
-
+        Connection connection = null;
+        try {
+            connection = getConnection();
+            //insert paciente
+            //preparo statement
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM pacientes WHERE id = ?");
+            preparedStatement.setInt(1, id);
+            //ejecuto
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (SQLException ex){
+                ex.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -102,7 +159,37 @@ public class PacienteDAOH2 implements IDao<Paciente>{
 
     @Override
     public Paciente find(int id) {
-        return null;
+        Connection connection= null;
+        Paciente paciente= null;
+        Domicilio domicilio=null;
+
+        try{
+            DomicilioDAOH2 domicilioDAOH2= new DomicilioDAOH2();
+            connection=getConnection();
+            PreparedStatement preparedStatement= connection.prepareStatement("SELECT * FROM pacientes WHERE id=?");
+            preparedStatement.setInt(1, id);
+            ResultSet rs= preparedStatement.executeQuery();
+            while (rs.next()){
+                int id_dom=rs.getInt(7);
+                domicilio=domicilioDAOH2.find(id_dom);
+                paciente=new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getInt(5),rs.getDate(6).toLocalDate(),domicilio);
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (SQLException ex){
+                ex.printStackTrace();
+            }
+        }
+        return paciente;
+
+
+
     }
 
 

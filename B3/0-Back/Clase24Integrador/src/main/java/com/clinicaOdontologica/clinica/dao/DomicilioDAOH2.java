@@ -84,14 +84,66 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
 
     @Override
     public Domicilio update(Domicilio domicilio) {
-        return null;
+        Connection connection= null;
+        try{
+            connection=getConnection();
+            //preparo sentencia
+            PreparedStatement preparedStatement= connection.prepareStatement("UPDATE domicilios SET calle=?,numero=?,localidad=?,provincia=? WHERE id=?");
+            //seteo los parametros
+            preparedStatement.setString(1,domicilio.getCalle());
+            preparedStatement.setInt(2,domicilio.getNumero());
+            preparedStatement.setString(3,domicilio.getLocalidad());
+            preparedStatement.setString(4,domicilio.getProvincia());
+            preparedStatement.setInt(5,domicilio.getId());
+            //ejecuto la sentencia
+            preparedStatement.executeUpdate();
+            //obtengo el id generado
+            ResultSet keys=preparedStatement.getGeneratedKeys();
+            //inserto el id generado en el objeto domicilio
+            while (keys.next()){
+                domicilio.setId(keys.getInt(1));
+            }
+            //cierro la stament
+            preparedStatement.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        finally {
+            try{
+                connection.close();
+            }
+            catch (SQLException ex){
+                ex.printStackTrace();
+            }
+        }
+        return domicilio;
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(int matricula) {
+        Connection connection = null;
+        //3 preparar la consulta
+        String ls_sql = "DELETE FROM odontologos WHERE matricula=?";
+        try{
+            //abro conexion
+            connection = getConnection();
+            //3 preparar la sentencia
+            PreparedStatement psSelect = connection.prepareStatement(ls_sql);
+            psSelect.setInt(1,matricula);
+            //4 ejecutar la sentencia
+            psSelect.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                //cierro conexion
+                connection.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
     }
-
 
     public Domicilio buscarEmail(String email) {
         return null;

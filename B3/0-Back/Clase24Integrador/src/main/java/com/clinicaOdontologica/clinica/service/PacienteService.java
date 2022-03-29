@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PacienteService implements PacienteServiceInterface{
+public class PacienteService implements PacienteServiceInterface {
     private IDao<Paciente> pacienteIDao;
 
     public PacienteService(IDao<Paciente> pacienteIDao) {
@@ -20,7 +20,7 @@ public class PacienteService implements PacienteServiceInterface{
     }
 
     @Override
-    public Paciente buscarXEmail(String email) {
+    public Paciente buscarPacienteXEmail(String email) {
         return null;
     }
 
@@ -33,6 +33,18 @@ public class PacienteService implements PacienteServiceInterface{
 
     @Override
     public Paciente actualizar(Paciente paciente) {
-        return null;
+        return pacienteIDao.update(paciente);
     }
+
+
+    @Override
+    public void eliminar(int id) {
+        pacienteIDao.delete(id);
+    }
+
+    @Override
+    public Paciente buscar(int id) {
+        return pacienteIDao.find(id);
+    }
+
 }

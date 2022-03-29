@@ -1,7 +1,7 @@
 import React, { Component } from  "react";
 
 class Footer extends Component{
-
+    /* <footer className="recordatorio">    */
     render(){
         return(
             <footer className="recordatorio">

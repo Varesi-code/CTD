@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import story from "./data.json";
-import Footer from "./Footer";
-import Buttons from "./Buttons";
+import Button from "./Button";
+import Adventure from "./adventure";
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            //array de objetos con la historia
+            step:[],
             //eleccion previa
             previous: "",
             //array de elecciones
@@ -15,16 +17,19 @@ class Main extends Component {
             ended: false,
         }
     }
-
+    //cargar las historias
+    componentDidMount() {
+        let stories = story.map(st) => {st.i: i && st.name: }
+        this.setState({step: stories});
+    }
 
     render() {
         return( 
 
         <main className="layout">
-            <h3 className="historia">Elige tu propia aventura!</h3>
-            <h1 className="historia">{story[0].historia}</h1>
-            <Buttons className="botones"  />
-            <Footer />
+            <h1 className="historia">{story.name}</h1>
+            <Button className="botones"  />
+            <Button className="botones"  />
         </main>);
     }
 }
