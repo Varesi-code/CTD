@@ -6,7 +6,7 @@ import java.util.List;
 
 public class OdontologoService {
     private IDao <Odontologo> odontologoIDao;
-
+    //constructor
     public OdontologoService(IDao<Odontologo> odontologoIDao) {
         this.odontologoIDao = odontologoIDao;
     }
@@ -15,23 +15,23 @@ public class OdontologoService {
         this.odontologoIDao = odontologoIDao;
     }
 
-    public void agregarOdontologo(Odontologo odontologo){
+    public void insertOdontologo(Odontologo odontologo){
         odontologoIDao.insert(odontologo);
     }
 
-    public void modificarOdontologo(Odontologo odontologo){
+    public void updateOdontologo(Odontologo odontologo){
         odontologoIDao.update(odontologo);
     }
 
-    public void eliminarOdontologo(int matricula){
+    public void deleteOdontologo(int matricula){
         odontologoIDao.delete(matricula);
     }
 
-    public Odontologo buscarOdontologo(int matricula){
+    public Odontologo findOdontologo(int matricula){
         return odontologoIDao.find(matricula);
     }
 
-    public List <Odontologo> todos(){
+    public List <Odontologo> all(){
         return odontologoIDao.listAll();
     }
 }

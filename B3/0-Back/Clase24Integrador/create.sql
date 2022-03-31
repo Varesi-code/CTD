@@ -30,7 +30,7 @@ VALUES ('Baspineiro','Rodolfo','qwe@gmail.com',147852,'2022-03-01',1);
 INSERT INTO pacientes (apellido, nombre, email, dni, fecha_ingreso, domicilio_id)
 VALUES ('Baspineiro','Ezequiel','zxc@gmail.com',748574,'2022-03-10',2);
 
---INSERT INTO odontologos VALUES (1456, 'Gabriela', 'Perez');
+INSERT INTO odontologos (matricula, nombre, apellido)VALUES (1456, 'Gabriela', 'Perez');
 --INSERT INTO odontologos VALUES (22134, 'Pedro', 'Martinez');
 --INSERT INTO odontologos VALUES (3789, 'Maria', 'Lopez');
 --INSERT INTO odontologos VALUES (5789, 'Juan', 'Torres');

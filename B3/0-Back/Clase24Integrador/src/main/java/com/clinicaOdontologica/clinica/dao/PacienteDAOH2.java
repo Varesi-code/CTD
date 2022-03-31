@@ -13,7 +13,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
         Class.forName("org.h2.Driver").newInstance();
         return DriverManager.getConnection("jdbc:h2:~/clinica","sa","sa");
     }
-
+    //////////////////// add new  "paciente" //////////////////////
     @Override
     public Paciente insert(Paciente paciente) {
         Connection connection = null;
@@ -48,15 +48,14 @@ public class PacienteDAOH2 implements IDao<Paciente>{
         finally {
             try{
                 connection.close();
-            }
-            catch (SQLException ex){
+            } catch (SQLException ex){
                 ex.printStackTrace();
             }
         }
         return paciente;
 
     }
-
+    //////////////////// actualizar //////////////////////
     @Override
     public Paciente update(Paciente paciente) {
         Connection connection = null;
@@ -68,7 +67,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
             paciente.getDomicilio().setId(domicilio.getId());
             //insert paciente
             //preparo statement
-            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE pacientes SET nombre = ?, apellido = ?, email = ?, dni = ?, fecha_ingreso = ?, domicilio_id = ? WHERE id = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE pacientes SET apellido = ?, nombre = ?, email = ?, dni = ?, fecha_ingreso = ?, domicilio_id = ? WHERE id = ?");
             preparedStatement.setString(1, paciente.getApellido());
             preparedStatement.setString(2, paciente.getNombre());
             preparedStatement.setString(3, paciente.getEmail());
@@ -97,7 +96,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
         }
 
     }
-
+    //////////////////// delete "paciente" //////////////////////
     @Override
     public void delete(int id) {
         Connection connection = null;
@@ -123,7 +122,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
             }
         }
     }
-
+    //////////////////// list all "pacientes" //////////////////////
     @Override
     public List<Paciente> listAll() {
         Connection connection= null;
@@ -157,11 +156,12 @@ public class PacienteDAOH2 implements IDao<Paciente>{
         return listaPacientes;
     }
 
+    //////////////////// find "paciente" by id//////////////////////
     @Override
     public Paciente find(int id) {
         Connection connection= null;
         Paciente paciente= null;
-        Domicilio domicilio=null;
+        Domicilio domicilio;
 
         try{
             DomicilioDAOH2 domicilioDAOH2= new DomicilioDAOH2();
@@ -187,13 +187,11 @@ public class PacienteDAOH2 implements IDao<Paciente>{
             }
         }
         return paciente;
-
-
-
     }
+    //////////////////// find "paciente" by email //////////////////////
 
 
-    public Paciente buscarEmail(String email) {
+    public Paciente findEmail(String email) {
         Connection connection= null;
         Paciente paciente= null;
         Domicilio domicilio=null;

@@ -145,7 +145,7 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
         }
     }
 
-    public Domicilio buscarEmail(String email) {
+    public Domicilio findEmail(String email) {
         return null;
     }
 }

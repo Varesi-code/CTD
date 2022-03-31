@@ -15,35 +15,35 @@ public class PacienteService implements PacienteServiceInterface {
 
     // trabajar con el DAO
     @Override
-    public List<Paciente> listAll() {
+    public List<Paciente> listAllPacientes() {
         return pacienteIDao.listAll();
     }
 
     @Override
-    public Paciente buscarPacienteXEmail(String email) {
-        return null;
+    public Paciente findEmailPaciente(String email) {
+        return pacienteIDao.findEmail(email);
     }
 
     //clase25
 
     @Override
-    public Paciente guardar(Paciente paciente) {
+    public Paciente insertPaciente(Paciente paciente) {
         return pacienteIDao.insert(paciente);
     }
 
     @Override
-    public Paciente actualizar(Paciente paciente) {
+    public Paciente updatePaciente(Paciente paciente) {
         return pacienteIDao.update(paciente);
     }
 
 
     @Override
-    public void eliminar(int id) {
+    public void deletePaciente(int id) {
         pacienteIDao.delete(id);
     }
 
     @Override
-    public Paciente buscar(int id) {
+    public Paciente findPaciente(int id) {
         return pacienteIDao.find(id);
     }
 

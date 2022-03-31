@@ -1,69 +1,77 @@
-import data from './data';
+import data from './data.json';
 import React, { Component } from 'react';
-import Opciones from './Opciones';
-import Recordatorio from './Recordatorio';
+import Botones from './Botones';
+import Footer from './Footer';
 
 class Main extends Component {
-constructor(props) {
-        super(props);
-        this.state = {
-        historial: [],
-        contador: 0,
-        seleccionPrevia: '',
-        };
-    }
+    //inicializo las props y state
+    constructor(props) {
+            super(props);
+            this.state = {
+                choice: "",
+                counter: 1,
+                path: [],
+                story:"",
+                optA:"",
+                optB:""
+            };
+            this.handleClick = this.handleClick.bind(this);
+        }
 
-    componentDidUpdate(prevProps, prevState) {
-    if (prevState.contador !== this.state.contador) {
-        this.state.historial.push(this.state.seleccionPrevia);
+    componentDidMount() {
+        console.log("componentDidMount");
+        this.setState({
+            choice: '',
+            counter: 1,
+            path: [],
+            story : data[0].historia,
+            optA : data[0].opciones.a,
+            optB : data[0].opciones.b
+        });
+        console.log(this.state);
+        
+        }
+    
+
+    handleClick (paramValue) {
+        const select = paramValue;
+        let obj;
+        
+        if(paramValue === "A"){
+            obj = data.find((e) => e.id === `${this.state.counter + 1}a`);   
+            
+        }else{
+            obj = data.find((e) => e.id === `${this.state.counter + 1}b`);  
+        }
+
+        if(obj){
+            this.setState({
+                choice: paramValue,
+                counter: this.state.counter+1,
+                story : obj.historia,
+                optA : obj.opciones.a,
+                optB : obj.opciones.b,
+                path: [...this.state.path, select]
+            })
+        }
+        else {
+            alert(" Otra vuelta?? 💫");
+            this.componentDidMount();
         }
     }
 
-    handleClick = (e) => {
-    const id = e.target.id;
-    if (this.state.contador >= 7) {
-        alert('Fin.');
-        } else if (id === 'A' && this.state.seleccionPrevia !== 'A') {
-        this.setState({
-        contador: this.state.contador + 1,
-        seleccionPrevia: 'A',
-        });
-    } else if (id === 'A' && this.state.seleccionPrevia === 'A') {
-        this.setState({
-            contador: this.state.contador + 2,
-        });
-    } else if (id === 'B' && this.state.seleccionPrevia === 'A') {
-        this.setState({
-            contador: this.state.contador + 3,
-            seleccionPrevia: 'B',
-        });
-    } else if (id === 'B') {
-        this.setState({
-            contador: this.state.contador + 2,
-            seleccionPrevia: 'B',
-        });
-    }
-    };
-
+        
     render() {
-    return (
-        <div className="layout">
-        <h1 className="historia">{data[this.state.contador].historia}</h1>
-        <Opciones
-            handleClick={this.handleClick}
-            opcionA={data[this.state.contador].opciones.a}
-            opcionB={data[this.state.contador].opciones.b}
-            />
-        <Recordatorio
-            seleccionPrevia={this.state.seleccionPrevia}
-            historial={this.state.historial.map(
-                (e, index) => (
-                <li key={index}>{e}</li>
-                ),
-                data[this.state.contador].id
-            )}
-        />
-        </div>
+        const { choice, path, optA, optB, story  } = this.state;
+        console.log("render");
+        console.log(this.state);
+        return (
+            <div className = "layout" >
+                <h1 className = "historia">{story}</h1>
+                <Botones optA = {optA} optB = {optB} handleClick = {this.handleClick}/>
+                <Footer lastChoice = {choice} pathWay={path}/>
+            </div>
+
         );
     }
 }

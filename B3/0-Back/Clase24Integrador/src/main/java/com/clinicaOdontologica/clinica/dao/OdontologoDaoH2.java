@@ -12,7 +12,7 @@ import java.util.List;
 public class OdontologoDaoH2 implements IDao<Odontologo> {
     private static final Logger logger= LogManager.getLogger(OdontologoDaoH2.class);
 
-    //////////////////// Insertar //////////////////////
+    //////////////////// Insert "odontologo" //////////////////////
     @Override
     public Odontologo insert(Odontologo odontologo) {
         Connection connection = null;
@@ -50,7 +50,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
         return odontologo;
     }
 
-    //////////////////// buscar //////////////////////
+    //////////////////// find by "matricula" //////////////////////
     @Override
     public Odontologo find(int matricula) {
         Connection connection= null;
@@ -75,9 +75,6 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
                     String nombreOdontologo = rs.getString("nombre");
                     String apellidoOdontologo = rs.getString("apellido");
                     odontologo = new Odontologo(matriculaOdontologo, nombreOdontologo, apellidoOdontologo);
-                    odontologo.setMatricula(matriculaOdontologo);
-                    odontologo.setNombre(nombreOdontologo);
-                    odontologo.setApellido(apellidoOdontologo);
                 }
                 //loggear la ejecucion
                 logger.info("Odontólogo encontrado en la base de datos");
@@ -95,7 +92,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
         return odontologo;
     }
 
-    //////////////////// actualizar //////////////////////
+    //////////////////// update "odontologo" //////////////////////
     @Override
     public Odontologo update(Odontologo odontologo) {
         Connection connection = null;
@@ -127,7 +124,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
         }return odontologo;
     }
 
-    //////////////////// eliminar //////////////////////
+    //////////////////// delete "odontologo" //////////////////////
     @Override
     public void delete(int matricula) {
         Connection connection = null;
@@ -158,7 +155,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
         }
     }
 
-    //////////////////// listar todos //////////////////////
+    //////////////////// list all "odontologo" //////////////////////
     @Override
     public List<Odontologo> listAll() {
         Connection connection = null;
@@ -206,6 +203,11 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             }
         }
         return odontologos;
+    }
+////////////////////////////// find "odontologo" by email //////////////////////////////
+    @Override
+    public Odontologo findEmail(String email) {
+        return null;
     }
 
     //1y2

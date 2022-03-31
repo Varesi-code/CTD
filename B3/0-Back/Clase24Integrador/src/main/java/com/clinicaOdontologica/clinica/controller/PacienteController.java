@@ -15,43 +15,44 @@ public class PacienteController {
     public PacienteController(PacienteService pacienteService) {
         this.pacienteService = pacienteService;
     }
-
+    //vista
     @GetMapping("/index")
     public String traerPaciente(Model model, @RequestParam("email") String email){
         //buscar al paciente con el email
-        Paciente paciente= pacienteService.buscarPacienteXEmail(email);
+        Paciente paciente= pacienteService.findEmailPaciente(email);
         model.addAttribute("nombre",paciente.getNombre());
         model.addAttribute("apellido",paciente.getApellido());
         return "index";
     }
+    //api metodos
     @PostMapping
-    public Paciente registrarPaciente(@RequestBody Paciente paciente){
-        return pacienteService.guardar(paciente);
+    public Paciente registerPaciente(@RequestBody Paciente paciente){
+        return pacienteService.insertPaciente(paciente);
     }
 
     @PutMapping
-    public Paciente actualizarPaciente(@RequestBody Paciente paciente){
-        return pacienteService.actualizar(paciente);
+    public Paciente updatePaciente(@RequestBody Paciente paciente){
+        return pacienteService.updatePaciente(paciente);
     }
 
     @GetMapping( "/{id}")
-    public Paciente buscarPaciente(@PathVariable int id){
-        return pacienteService.buscar(id);
+    public Paciente findPaciente(@PathVariable int id){
+        return pacienteService.findPaciente(id);
     }
 
     @DeleteMapping( "/{id}")
-    public String eliminarPaciente(@PathVariable int id){
-        String mensaje="Error al eliminar";
-        if(pacienteService.buscar(id)!=null){
-            pacienteService.eliminar(id);
-            mensaje="Paciente eliminado";
+    public String deletePaciente(@PathVariable int id){
+        String message="Error al eliminar";
+        if(pacienteService.findPaciente(id)!=null){
+            pacienteService.deletePaciente(id);
+            message="Paciente eliminado";
         }
-        return mensaje;
+        return message;
     }
 
     @GetMapping
-    public Iterable<Paciente> listarPacientes(){
-        return pacienteService.listAll();
+    public Iterable<Paciente> listAllPacientes(){
+        return pacienteService.listAllPacientes();
     }
 
 

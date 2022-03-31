@@ -1,35 +1,29 @@
 import React, { Component } from "react";
-import story from "./data.json";
+import "../index.css";
+import stories from "./data.json";
 import Button from "./Button";
-import Adventure from "./adventure";
+import Footer from "./Footer";
 
 class Main extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            //array de objetos con la historia
-            step:[],
+        this.state = ({
             //eleccion previa
             previous: "",
             //array de elecciones
             completePath: [],
             //booleano para saber si termino el juego
-            ended: false,
-        }
+            isEnded: false,
+        })
     }
-    //cargar las historias
-    componentDidMount() {
-        let stories = story.map(st) => {st.i: i && st.name: }
-        this.setState({step: stories});
-    }
+
 
     render() {
         return( 
-
         <main className="layout">
-            <h1 className="historia">{story.name}</h1>
-            <Button className="botones"  />
-            <Button className="botones"  />
+            <h1 className="historia">{stories[0].historia}</h1>
+            <Button />
+            <Footer />
         </main>);
     }
 }
