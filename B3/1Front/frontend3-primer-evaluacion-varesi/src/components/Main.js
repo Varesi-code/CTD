@@ -9,59 +9,56 @@ class Main extends Component {
             super(props);
             this.state = {
                 choice: "",
-                counter: 1,
+                counter: 0,
                 path: [],
-                story:"",
-                optA:"",
-                optB:""
+                dataSet: data,
             };
             this.handleClick = this.handleClick.bind(this);
-        }
+    }
 
-    componentDidMount() {
-        console.log("componentDidMount");
+    onStart() {
         this.setState({
-            choice: '',
             counter: 1,
-            path: [],
-            story : data[0].historia,
-            optA : data[0].opciones.a,
-            optB : data[0].opciones.b
+            story : this.state.dataSet[0].historia,
+            optA : this.state.dataSet[0].opciones.a,
+            optB : this.state.dataSet[0].opciones.b
         });
-        console.log(this.state);
+    }
+    componentDidMount() {
         
-        }
+        this.onStart()
+        console.log("componentDidMount");
+    }
     
-
+    
     handleClick (paramValue) {
+        const { counter, dataSet, path } = this.state;
         const select = paramValue;
         let obj;
         
-        if(paramValue === "A"){
-            obj = data.find((e) => e.id === `${this.state.counter + 1}a`);   
-            
-        }else{
-            obj = data.find((e) => e.id === `${this.state.counter + 1}b`);  
-        }
-
+        (paramValue === "A") ? (
+            obj = dataSet.find((e) => e.id === `${counter + 1}a`)
+            ) : (
+            obj = dataSet.find((e) => e.id === `${counter + 1}b`)
+            );
+        
         if(obj){
             this.setState({
                 choice: paramValue,
-                counter: this.state.counter+1,
+                counter: counter + 1,
                 story : obj.historia,
                 optA : obj.opciones.a,
                 optB : obj.opciones.b,
-                path: [...this.state.path, select]
+                path: [...path, select]
             })
         }
         else {
             alert(" Otra vuelta?? 💫");
-            this.componentDidMount();
+            this.onStart();
         }
     }
-
-        
     render() {
+        
         const { choice, path, optA, optB, story  } = this.state;
         console.log("render");
         console.log(this.state);
@@ -69,11 +66,9 @@ class Main extends Component {
             <div className = "layout" >
                 <h1 className = "historia">{story}</h1>
                 <Botones optA = {optA} optB = {optB} handleClick = {this.handleClick}/>
-                <Footer lastChoice = {choice} pathWay={path}/>
+                <Footer choice = {choice} path={path}/>
             </div>
-
         );
     }
 }
-
 export default Main;

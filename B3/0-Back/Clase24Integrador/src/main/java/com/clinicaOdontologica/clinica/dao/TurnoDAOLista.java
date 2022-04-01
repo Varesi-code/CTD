@@ -3,11 +3,13 @@ package com.clinicaOdontologica.clinica.dao;
 import com.clinicaOdontologica.clinica.dominio.Odontologo;
 import com.clinicaOdontologica.clinica.dominio.Paciente;
 import com.clinicaOdontologica.clinica.dominio.Turno;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class TurnoDAOLista implements IDao <Turno> {
     private List<Turno> turnos;
     
@@ -17,8 +19,8 @@ public class TurnoDAOLista implements IDao <Turno> {
         OdontologoDaoH2 odontologoDaoH2 = new OdontologoDaoH2();
         Paciente paciente = pacienteDAOH2.find(1);
         Odontologo odontologo = odontologoDaoH2.find(1);
-
         Turno turno1 = new Turno(1, odontologo, paciente, LocalDate.now());
+        turnos.add(turno1);
     }
 
     @Override

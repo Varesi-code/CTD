@@ -12,7 +12,4 @@ public interface PacienteServiceInterface {
 
    void deletePaciente (int id);
    Paciente findPaciente(int id);
-
-
-
 }

@@ -9,12 +9,21 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
+
+    @Autowired
+    private PacienteService pacienteService;
+
+    /*
     private final PacienteService pacienteService;
 
     @Autowired
     public PacienteController(PacienteService pacienteService) {
         this.pacienteService = pacienteService;
     }
+
+     */
+
+
     //vista
     @GetMapping("/index")
     public String traerPaciente(Model model, @RequestParam("email") String email){

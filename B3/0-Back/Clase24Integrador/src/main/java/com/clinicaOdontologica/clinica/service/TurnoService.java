@@ -1,8 +1,11 @@
 package com.clinicaOdontologica.clinica.service;
 import com.clinicaOdontologica.clinica.dao.IDao;
 import com.clinicaOdontologica.clinica.dominio.Turno;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class TurnoService {
 
     private IDao<Turno> turnoIDao;
@@ -15,8 +18,8 @@ public class TurnoService {
         return turnoIDao.insert(turno);
     }
 
-    public void modificarTurno(Turno turno) {
-        turnoIDao.update(turno);
+    public Turno modificarTurno(Turno turno) {
+        return turnoIDao.update(turno);
     }
 
     public void eliminarTurno(int id) {

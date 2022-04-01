@@ -31,6 +31,6 @@ INSERT INTO pacientes (apellido, nombre, email, dni, fecha_ingreso, domicilio_id
 VALUES ('Baspineiro','Ezequiel','zxc@gmail.com',748574,'2022-03-10',2);
 
 INSERT INTO odontologos (matricula, nombre, apellido)VALUES (1456, 'Gabriela', 'Perez');
---INSERT INTO odontologos VALUES (22134, 'Pedro', 'Martinez');
---INSERT INTO odontologos VALUES (3789, 'Maria', 'Lopez');
---INSERT INTO odontologos VALUES (5789, 'Juan', 'Torres');
+INSERT INTO odontologos (matricula, nombre, apellido)VALUES (256, 'Mario', 'Vargas');
+INSERT INTO odontologos (matricula, nombre, apellido)VALUES (884, 'Pablo', 'Martinez');
+INSERT INTO odontologos (matricula, nombre, apellido)VALUES (9895, 'Cristina', 'Palacios');

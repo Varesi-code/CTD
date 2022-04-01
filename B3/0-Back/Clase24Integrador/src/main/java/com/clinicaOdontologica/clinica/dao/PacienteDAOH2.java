@@ -1,14 +1,16 @@
 package com.clinicaOdontologica.clinica.dao;
 import com.clinicaOdontologica.clinica.dominio.Domicilio;
 import com.clinicaOdontologica.clinica.dominio.Paciente;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class PacienteDAOH2 implements IDao<Paciente>{
+
     private static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver").newInstance();
         return DriverManager.getConnection("jdbc:h2:~/clinica","sa","sa");
@@ -20,7 +22,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
         try{
             connection=getConnection();
             //llamo domicilio y guardo id en paciente
-            DomicilioDAOH2 domicilioDAOH2= new DomicilioDAOH2();
+            DomicilioDAOH2 domicilioDAOH2 = new DomicilioDAOH2();
             Domicilio domicilio= domicilioDAOH2.insert(paciente.getDomicilio());
             paciente.getDomicilio().setId(domicilio.getId());
             //insert paciente
@@ -39,11 +41,9 @@ public class PacienteDAOH2 implements IDao<Paciente>{
             while (keys.next()){
                 paciente.setId(keys.getInt(1));
             }
-
         }
         catch (Exception e){
             e.printStackTrace();
-
         }
         finally {
             try{

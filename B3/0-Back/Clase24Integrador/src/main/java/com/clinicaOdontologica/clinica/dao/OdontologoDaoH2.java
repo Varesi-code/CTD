@@ -4,11 +4,13 @@ package com.clinicaOdontologica.clinica.dao;
 import com.clinicaOdontologica.clinica.dominio.Odontologo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class OdontologoDaoH2 implements IDao<Odontologo> {
     private static final Logger logger= LogManager.getLogger(OdontologoDaoH2.class);
 
@@ -24,10 +26,11 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             //loggear la conexion
             logger.info("Conexion establecida.");
             //3 preparar la sentencia
-            PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, odontologo.getMatricula());
-            statement.setString(2, odontologo.getNombre());
-            statement.setString(3, odontologo.getApellido());
+            PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            statement.setInt(2, odontologo.getMatricula());
+            statement.setString(3, odontologo.getNombre());
+            statement.setString(4, odontologo.getApellido());
+
             if (odontologo.getMatricula() == 0 || odontologo.getNombre() ==" " || odontologo.getApellido() ==" ") {
                 logger.error("No se pudo insertar el odontólogo. Verifique los datos e intente nuevamente.");
             }else {
@@ -35,6 +38,12 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
                 statement.executeUpdate();
                 //loggear la ejecucion
                 logger.info("Odontólogo insertado en la base de datos");
+
+                ResultSet keys = statement.getGeneratedKeys();
+                if (keys.next()) {
+                    statement.setInt(1, keys.getInt(1));
+
+                }
             }
         } catch (Exception e) {
             logger.error( "Error al insertar odontólogo.", e);

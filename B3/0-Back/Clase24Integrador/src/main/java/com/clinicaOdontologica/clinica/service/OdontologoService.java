@@ -1,26 +1,27 @@
 package com.clinicaOdontologica.clinica.service;
 import com.clinicaOdontologica.clinica.dao.IDao;
 import com.clinicaOdontologica.clinica.dominio.Odontologo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class OdontologoService {
+    @Autowired
     private IDao <Odontologo> odontologoIDao;
-    //constructor
-    public OdontologoService(IDao<Odontologo> odontologoIDao) {
-        this.odontologoIDao = odontologoIDao;
-    }
 
     public void OdontologoDaoH2(IDao<Odontologo> odontologoIDao) {
         this.odontologoIDao = odontologoIDao;
     }
 
-    public void insertOdontologo(Odontologo odontologo){
-        odontologoIDao.insert(odontologo);
+    public Odontologo insertOdontologo(Odontologo odontologo){
+        return odontologoIDao.insert(odontologo);
     }
 
-    public void updateOdontologo(Odontologo odontologo){
+    public Odontologo updateOdontologo(Odontologo odontologo){
         odontologoIDao.update(odontologo);
+        return odontologo;
     }
 
     public void deleteOdontologo(int matricula){

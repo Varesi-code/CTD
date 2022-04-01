@@ -2,6 +2,7 @@ package com.clinicaOdontologica.clinica.dominio;
 
 public class Odontologo {
     //atributos
+    private int id;
     private int matricula;
     private String nombre;
     private String apellido;
@@ -36,6 +37,14 @@ public class Odontologo {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

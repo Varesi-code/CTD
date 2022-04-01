@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class Botones extends Component {
+    
 
     render(props) {
         return (

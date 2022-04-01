@@ -1,22 +1,22 @@
 package com.clinicaOdontologica.clinica.dao;
 
 import com.clinicaOdontologica.clinica.dominio.Domicilio;
+import org.springframework.stereotype.Repository;
 
 
 import java.sql.*;
 import java.util.List;
 
+@Repository
 public class DomicilioDAOH2 implements IDao<Domicilio>{
     private static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver").newInstance();
         return DriverManager.getConnection("jdbc:h2:~/clinica","sa","sa");
     }
-
     @Override
     public List<Domicilio> listAll() {
         return null;
     }
-
     @Override
     public Domicilio insert(Domicilio domicilio) {
         Connection connection= null;
