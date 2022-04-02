@@ -4,7 +4,6 @@ import Botones from './Botones';
 import Footer from './Footer';
 
 class Main extends Component {
-    //inicializo las props y state
     constructor(props) {
             super(props);
             this.state = {
@@ -18,6 +17,8 @@ class Main extends Component {
 
     onStart() {
         this.setState({
+            choice: "",
+            path: [],
             counter: 1,
             story : this.state.dataSet[0].historia,
             optA : this.state.dataSet[0].opciones.a,
@@ -28,7 +29,6 @@ class Main extends Component {
         this.onStart()
         console.log("componentDidMount");
     }
-    
     
     handleClick (paramValue) {
         const { counter, dataSet, path } = this.state;

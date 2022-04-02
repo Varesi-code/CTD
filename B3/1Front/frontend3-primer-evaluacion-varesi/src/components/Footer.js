@@ -8,7 +8,7 @@ class Footer extends Component {
         <h4>Historial de opciones elegidas: </h4>
         <ul>
           {
-              this.props.path.map((e, i)=><li key = {i}>{e}</li>)
+            this.props.path.map((e, i)=><li key = {i}>{e}</li>)
           }
         </ul>
       </div>
