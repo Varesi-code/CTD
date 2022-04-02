@@ -25,7 +25,6 @@ class Main extends Component {
         });
     }
     componentDidMount() {
-        
         this.onStart()
         console.log("componentDidMount");
     }
@@ -33,7 +32,6 @@ class Main extends Component {
     
     handleClick (paramValue) {
         const { counter, dataSet, path } = this.state;
-        const select = paramValue;
         let obj;
         
         (paramValue === "A") ? (
@@ -49,7 +47,7 @@ class Main extends Component {
                 story : obj.historia,
                 optA : obj.opciones.a,
                 optB : obj.opciones.b,
-                path: [...path, select]
+                path: [...path, paramValue]
             })
         }
         else {
