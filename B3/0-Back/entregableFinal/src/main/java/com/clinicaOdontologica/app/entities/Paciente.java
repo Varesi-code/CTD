@@ -1,10 +1,8 @@
 package com.clinicaOdontologica.app.entities;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -37,11 +35,11 @@ public class Paciente {
     //para que afecte a la tabla de domicilios(cascade)
     @OneToOne(cascade = CascadeType.REMOVE)
     //se crea la clave foranea. puedo elegir el nombre
-    @JoinColumn(name = "id_domicilio" , referencedColumnName = "id")
+    @JoinColumn(name = "domicilio_id" , referencedColumnName = "id")
     private Domicilio domicilio;
 
     @OneToMany( mappedBy = "paciente", fetch = FetchType.LAZY)
     //para no generar un bucle infinito
-    // @JsonIgnore
+    @JsonIgnore
     private Set<Turno> turnos = new HashSet<>();
 }

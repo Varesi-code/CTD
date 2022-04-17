@@ -1,11 +1,12 @@
-package com.clinicaOdontologica.app.controller;
+package com.dh.clase36.integradora.controller;
 
-import com.clinicaOdontologica.app.entities.Paciente;
-import com.clinicaOdontologica.app.exceptions.ResourceNotFoundException;
-import com.clinicaOdontologica.app.service.PacienteService;
+import com.dh.clase36.integradora.entities.Paciente;
+import com.dh.clase36.integradora.exceptions.ResourceNotFoundException;
+import com.dh.clase36.integradora.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +29,7 @@ public class PacienteController {
     }
 
      */
+
     @GetMapping
     public List<Paciente> buscarPacientes(){
         return pacienteService.buscarTodos();
@@ -63,8 +65,8 @@ public class PacienteController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminarPaciente(@PathVariable Long id) throws ResourceNotFoundException {
-        pacienteService.eliminar(id);
-        return ResponseEntity.ok("Paciente eliminado con id: "+id);
+            pacienteService.eliminar(id);
+            return ResponseEntity.ok("Paciente eliminado con id: "+id);
     }
 
 

@@ -1,9 +1,8 @@
-package com.clinicaOdontologica.app.service;
+package com.dh.clase36.integradora.service;
 
-
-import com.clinicaOdontologica.app.entities.Paciente;
-import com.clinicaOdontologica.app.exceptions.ResourceNotFoundException;
-import com.clinicaOdontologica.app.repository.PacienteRepository;
+import com.dh.clase36.integradora.entities.Paciente;
+import com.dh.clase36.integradora.exceptions.ResourceNotFoundException;
+import com.dh.clase36.integradora.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +11,7 @@ import java.util.Optional;
 
 
 @Service
-public class PacienteService {
+public class PacienteService{
     @Autowired
     PacienteRepository repository;
 
@@ -24,7 +23,7 @@ public class PacienteService {
         return repository.save(p);
     }
 
-    public void eliminar(Long id) throws ResourceNotFoundException {
+    public void eliminar(Long id) throws ResourceNotFoundException{
         Optional<Paciente> pacienteBuscado=buscar(id);
         if (pacienteBuscado.isPresent()){
             repository.deleteById(id);

@@ -1,19 +1,16 @@
 package com.clinicaOdontologica.app.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
-@Table(name = "domicilios")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
+@Table(name = "domicilios")
 public class Domicilio {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -35,7 +32,7 @@ public class Domicilio {
     //donde se mapea en la base de datos la relacion
     //voy a poder conocer al paciente a traves del domicilio
     @OneToOne(mappedBy = "domicilio")
-    //@JsonIgnore
+    @JsonIgnore
     private Paciente paciente;
 
 }

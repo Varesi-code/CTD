@@ -9,8 +9,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Entity
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @Table(name="turnos")
 public class Turno {
@@ -24,13 +24,15 @@ public class Turno {
 
     @Column
     private LocalTime hora;
+
     // atributos de relacion
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_paciente", nullable = false)
+    @JoinColumn(name="paciente_id", nullable = false)
     private Paciente paciente;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_odontologo", nullable = false)
+    @JoinColumn(name="odontologo_id", nullable = false)
     private Odontologo odontologo;
+
 
 }
