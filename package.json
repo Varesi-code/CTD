@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Varesi-code/CTD/issues"
   },
-  "homepage": "https://github.com/Varesi-code/CTD#readme"
+  "homepage": "https://github.com/Varesi-code/CTD#readme",
+  "dependencies": {
+    "react-router-dom": "^6.3.0"
+  }
 }

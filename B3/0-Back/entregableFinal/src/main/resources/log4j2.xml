@@ -12,7 +12,7 @@ the status attribute represents the level at which internal log4j events should 
         <!--https://stackify.com/java-logging-best-practices/ -->
         <!-- Logging everything into a single file is, of course, not ideal. It’s usually much better to roll over the active log file regularly –
          which is exactly what the RollingFileAppender does. -->
-        <RollingFile name="RollingFileAppender" fileName="logs/app.log"
+        <RollingFile name="RollingFileAppender" fileName="app.log"
                      filePattern="logs/${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
             <!-- the layouts are used by appenders to define how a log message will be formatted.
             Here’s a brief description of some of the more commonly used layouts that log4j2 offers:

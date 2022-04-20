@@ -20,6 +20,10 @@ public class PacienteService {
         return repository.findAll();
     }
 
+    public Optional<Paciente> buscarPorEmail(String email){
+        return repository.findByEmail(email);
+    }
+
     public Paciente guardar(Paciente p){
         return repository.save(p);
     }

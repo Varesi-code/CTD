@@ -18,7 +18,7 @@ public class TurnoService {
         return repository.save(turno);
     }
 
-    public List<Turno> listarTurno(){
+    public List<Turno> listarTurnos(){
         return repository.findAll();
     }
 
@@ -27,7 +27,7 @@ public class TurnoService {
         if (turnoBuscado.isPresent())
             repository.deleteById(id);
         else
-            throw new ResourceNotFoundException("No existe el turno con id: "+id+", no se pudo borrar");
+            throw new ResourceNotFoundException("No existe el turno con id: " + id + ", no se pudo borrar");
     }
 
     public Turno actualizar(Turno turno){

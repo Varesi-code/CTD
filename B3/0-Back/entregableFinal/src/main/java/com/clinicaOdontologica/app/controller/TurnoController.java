@@ -28,34 +28,34 @@ public class TurnoController {
 
     @GetMapping
     public ResponseEntity<List<Turno>> listarTurnos(){
-        return ResponseEntity.ok(turnoService.listarTurno());
+        return ResponseEntity.ok(turnoService.listarTurnos());
     }
     @PostMapping
     public ResponseEntity<Turno> registrarTurno(@RequestBody Turno turno){
         ResponseEntity<Turno> respuesta;
         //preguntar si es un paciente correcto y un odontologo correcto
-        Optional<Paciente> pacienteBus= pacienteService.buscar(turno.getPaciente().getId());
-        Optional<Odontologo> odontologoBus=odontologoService.buscar(turno.getOdontologo().getId());
+        Optional<Paciente> pacienteBus = pacienteService.buscar(turno.getPaciente().getId());
+        Optional<Odontologo> odontologoBus = odontologoService.buscar(turno.getOdontologo().getId());
 
         if (pacienteBus.isPresent() && odontologoBus.isPresent()){
-            respuesta= ResponseEntity.ok(turnoService.registrarTurno(turno));
+            respuesta = ResponseEntity.ok(turnoService.registrarTurno(turno));
         }
         else{
-            respuesta=ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+            respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
         return respuesta;
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/id={id}")
     public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
         turnoService.eliminar(id);
-        return ResponseEntity.status(HttpStatus.OK).body("Turno con id="+id+" eliminado");
+        return ResponseEntity.status(HttpStatus.OK).body("Turno con id=" + id + " eliminado");
 
     }
 
     @PutMapping ResponseEntity<Turno> actualizarTurno(@RequestBody Turno turno){
-        Turno turnoActualizado=turnoService.actualizar(turno);
-        if (turnoActualizado!=null){
+        Turno turnoActualizado = turnoService.actualizar(turno);
+        if (turnoActualizado != null){
             return ResponseEntity.ok(turnoActualizado);
         }
         else{

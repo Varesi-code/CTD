@@ -16,7 +16,8 @@ import java.time.LocalTime;
 public class Turno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator (name = "turno_sequence", sequenceName = "turno_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator= "turno_sequence")
     private Long id;
 
     @Column
@@ -26,11 +27,11 @@ public class Turno {
     private LocalTime hora;
 
     // atributos de relacion
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="paciente_id", nullable = false)
     private Paciente paciente;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="odontologo_id", nullable = false)
     private Odontologo odontologo;
 

@@ -15,7 +15,8 @@ import java.util.Set;
 public class Paciente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator (name = "paciente_sequence", sequenceName = "paciente_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator= "paciente_sequence")
     private Long id;
 
     @Column(name = "nombre")
@@ -29,6 +30,9 @@ public class Paciente {
 
     @Column(name = "fecha_ingreso")
     private String fechaIngreso;
+
+    @Column(name="email")
+    private String email;
 
     // atributos de relaciones
 

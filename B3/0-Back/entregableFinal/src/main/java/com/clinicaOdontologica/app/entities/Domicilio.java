@@ -13,7 +13,8 @@ import javax.persistence.*;
 @Table(name = "domicilios")
 public class Domicilio {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator (name = "domicilio_sequence", sequenceName = "domicilio_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator= "domicilio_sequence")
     private Long id;
 
     @Column

@@ -22,6 +22,17 @@ public class OdontologoController {
         return service.buscarTodos();
     }
 
+    @GetMapping("/matricula={matricula}")
+    public ResponseEntity<Odontologo> buscarOdontologoPorMatricula(@PathVariable int matricula){
+        Optional<Odontologo> odontologoActualizado=service.buscarPorMatricula(matricula);
+        if(odontologoActualizado.isPresent()){
+            return ResponseEntity.ok(odontologoActualizado.get());
+        }
+        else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
     @PostMapping
     public Odontologo registrarOdontologo(@RequestBody Odontologo odontologo){
         return service.registrarOdontologo(odontologo);
@@ -37,7 +48,7 @@ public class OdontologoController {
         }
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id={id}")
     public ResponseEntity<Odontologo> buscarOdontologo(@PathVariable Long id){
         Optional<Odontologo> odontologoActualizado=service.buscar(id);
         if(odontologoActualizado.isPresent()){
@@ -48,7 +59,7 @@ public class OdontologoController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/id={id}")
     public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException {
         service.eliminarOdontologo(id);
         return ResponseEntity.ok("Odontologo eliminado");

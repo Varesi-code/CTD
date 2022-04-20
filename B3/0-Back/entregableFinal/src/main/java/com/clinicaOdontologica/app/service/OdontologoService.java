@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+//todo
+
+
 @Service
 public class OdontologoService {
     @Autowired
@@ -15,6 +18,10 @@ public class OdontologoService {
 
     public Optional<Odontologo> buscar(Long id){
         return repository.findById(id);
+    }
+
+    public Optional<Odontologo> buscarPorMatricula(int matricula){
+        return repository.findByMatricula(matricula);
     }
 
     public List<Odontologo> buscarTodos(){
