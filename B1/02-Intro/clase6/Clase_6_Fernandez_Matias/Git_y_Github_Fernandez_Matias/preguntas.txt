@@ -1,3 +1,0 @@
-a. Fue creado por Linus Torvalds porque buscaba mejorar el sitema de control de version que habia en esa epoca.
-b.  Actualmente el dueño de Github es Microsoft porque quisieron y quieren darle un nuevo paso a la tecnologia y mas herramientas a los programadores.
-c. No, solo es posible con la terminal.

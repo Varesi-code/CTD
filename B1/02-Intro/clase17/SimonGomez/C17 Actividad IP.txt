@@ -1,5 +1,0 @@
-● Dirección IP Pública 186.80.64.13
-
-● Dirección IP Privada y su Máscara de subred 192.168.56.1 y mascara 255.255.255.0
-
-● Dirección MAC 0A-00-27-00-00-06

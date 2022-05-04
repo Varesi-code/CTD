@@ -1,5 +1,0 @@
-1 Porque hay lenguajes que tienen un compilar determinado y no puede ser interpretado por algunos sistemas
-
-2 Es un administrador de maquinas virtuales
-
-3 No afecta a las demas porque las maquinas virtuales estan isoladas.
